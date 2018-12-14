@@ -1,12 +1,14 @@
 Title: About
 
-##2018 Fall 分組網誌
+##2018 Fall cp-bgx 分組網誌
 
-課程倉儲: <a href="https://github.com/mdecourse/2018fall">https://github.com/mdecourse/2018fall</a>
+倉儲: <a href="https://github.com/mdecp2018/finalproject-bgx">https://github.com/mdecp2018/finalproject-bgx</a>
 
-課程投影片: <a href="https://mdecourse.github.io/2018fall/reveal">https://mdecourse.github.io/2018fall/reveal</a>
+課程投影片: <a href="https://mdecp2018.github.io/finalproject-bgx/reveal">https://mdecp2018.github.io/finalproject-bgx/reveal</a>
 
-課程網誌: <a href="https://mdecourse.github.io/2018fall/blog">https://mdecourse.github.io/2018fall/blog</a>
+課程網誌: <a href="https://mdecp2018.github.io/finalproject-bgx/blog">https://mdecp2018.github.io/finalproject-bgx/blog</a>
+
+Heroku 動態同步網站: <a href="http://cp2018-bgx.herokuapp.com">http://cp2018-bgx.herokuapp.com</a>
 
 
 

@@ -75,10 +75,76 @@ $(function(){
 
 </ul>
 </confmenu></header>
-<div class='container'><nav><ul id='css3menu1' class='topmenu'><li><a href='Python 安裝.html'>Python 安裝</a><li><a href='Python 語法.html'>Python 語法</a><li><a href='繪圖範例.html'>繪圖範例</a><li><a href='參考資料.html'>參考資料</a><li><a href='電子書.html'>電子書</a></li></ul></nav><section> <a href='Python 語法.html'>Next</a> >> Python 語法<br /><h1>Python 安裝</h1>
-<h4>Windows 操作系統</h4>
-<p>利用瀏覽器連結至 <a href="https://www.python.org./../downloads/">https://www.python.org./../downloads/</a> 後, 從 <a href="https://www.python.org./../downloads/windows/">https://www.python.org./../downloads/windows/</a> 下載 <a href="https://www.python.org/ftp/python/3.7.2/python-3.7.2rc1-amd64.exe">https://www.python.org/ftp/python/3.7.2/python-3.7.2rc1-amd64.exe</a>, 在 Windows 10 64 位元環境中安裝, 即可從 cmd 命令列中, 以 python 指令使用互動式指令環境.</p>
-<p>可攜 Python 系統: <a href="https://drive.google.com/open?id=1qSnGb4NBmfGG0jGVNfQJX_9TNVweIdFW">p37-18.12.7z</a> (下載解開壓縮檔案後, 以 start.bat 啟動後即可使用)</p>
-<h4>Ubuntu 操作系統</h4>
-<p>比較方便使用的 Ubuntu 操作系統, 可以在 Windows 10 64 位元環境中, 安裝 <a href="https://www.virtualbox.org/wiki/Downloads">Virtualbox</a> 虛擬環境後, 再安裝 Ubuntu LTS 版本.</p>
-<br /> <a href='Python 語法.html'>Next</a> >> Python 語法</section></div></body></html>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><li><a href='Python 安裝.html'>Python 安裝</a><li><a href='Python 語法.html'>Python 語法</a><li><a href='繪圖範例.html'>繪圖範例</a><li><a href='參考資料.html'>參考資料</a><li><a href='電子書.html'>電子書</a></li></ul></nav><section>Python 語法 << <a href='Python 語法.html'>Previous</a> <a href='參考資料.html'>Next</a> >> 參考資料<br /><h1>繪圖範例</h1>
+<p>
+<script src="./../static/brython.js"></script>
+<script src="./../static/brython_stdlib.js"></script>
+</p>
+<div id="brython_div"></div>
+<p>
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import html
+import math
+canvas = html.CANVAS(width = 300, height = 200)
+canvas.style = {"width": "100%"}
+canvas.id = "taiwan_flag"
+brython_div = doc["brython_div"]
+brython_div <= canvas
+
+# 準備繪圖畫布
+canvas = doc["taiwan_flag"]
+ctx = canvas.getContext("2d")
+# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
+# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
+# 以下採用 canvas 原始座標繪圖
+flag_w = canvas.width
+flag_h = canvas.height
+circle_x = flag_w/4
+circle_y = flag_h/4
+# 先畫滿地紅
+ctx.fillStyle='rgb(255, 0, 0)'
+ctx.fillRect(0,0,flag_w,flag_h)
+# 再畫青天
+ctx.fillStyle='rgb(0, 0, 150)'
+ctx.fillRect(0,0,flag_w/2,flag_h/2)
+# 畫十二道光芒白日
+ctx.beginPath()
+star_radius = flag_w/8
+angle = 0
+for i in range(24):
+    angle += 5*math.pi*2/12
+    toX = circle_x + math.cos(angle)*star_radius
+    toY = circle_y + math.sin(angle)*star_radius
+    # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
+    if (i):
+        ctx.lineTo(toX, toY)
+    else:
+        ctx.moveTo(toX, toY)
+ctx.closePath()
+# 將填色設為白色
+ctx.fillStyle = '#fff'
+ctx.fill()
+# 白日:藍圈
+ctx.beginPath()
+ctx.arc(circle_x, circle_y, flag_w*17/240, 0, math.pi*2, True)
+ctx.closePath()
+# 填色設為藍色
+ctx.fillStyle = 'rgb(0, 0, 149)'
+ctx.fill()
+# 白日:白心
+ctx.beginPath()
+ctx.arc(circle_x, circle_y, flag_w/16, 0, math.pi*2, True)
+ctx.closePath()
+# 填色設為白色
+ctx.fillStyle = '#fff'
+ctx.fill()
+</script>
+</p>
+<br />Python 語法 << <a href='Python 語法.html'>Previous</a> <a href='參考資料.html'>Next</a> >> 參考資料</section></div></body></html>
