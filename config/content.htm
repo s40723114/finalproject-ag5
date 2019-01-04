@@ -113,7 +113,7 @@
 <div class="line number2 index1 alt1"><span>2</span></div>
 <div class="line number3 index2 alt2"><span>3</span></div>
 <div class="line number4 index3 alt1"><span>4</span></div>
-<div class="line number5 index4 alt2"><span>五</span></div>
+<div class="line number5 index4 alt2"><span>5</span></div>
 <div class="line number6 index5 alt1"><span>6</span></div>
 <div class="line number7 index6 alt2"><span>7</span></div>
 <div class="line number8 index7 alt1"><span>8</span></div>
@@ -558,8 +558,7 @@
 <p><span>當Python解譯器讀取原始碼時，會執行其中的所有程式碼。而在執行這些程式碼之前，會定義一些特殊變數的值，例如：當該程式碼執行時，是以主程式的位階直接執行時，Python就會將__name__這個變數設為__main__。</span></p>
 <p><span>假如這個程式碼檔案並非以主程式的位階直接執行，而是被導入其他程式中，以模組的位階執行，__name__變數就會被設為該模組的名稱。</span></p>
 <p></p>
-<p></p>
-<h1>Python 語法</h1>
+<p></p><h1>Python 語法</h1>
 <p>Python 3 官方教材: <a href="https://docs.python.org/3/index.html">https://docs.python.org/3/index.html</a> </p>
 <p>Python tutorial: <a href="https://docs.python.org/3/tutorial/index.html">https://docs.python.org/3/tutorial/index.html</a> (英文)</p>
 <p>Python 教學: <a href="https://python-doc-tw.github.io/tutorial/index.html">https://python-doc-tw.github.io/tutorial/index.html</a> </p>
@@ -1561,6 +1560,91 @@ ctx.fillStyle = '#fff'
 ctx.fill()
 </script>
 </p>
+<h1>參考資料</h1>
+<h4>Python 教材</h4>
+<p><a href="https://www.python-course.eu">https://www.python-course.eu</a> </p>
+<p><a href="http://mde.tw/cp2018">http://mde.tw/cp2018</a> </p>
+<p><a href="https://mdecp2018.github.io/finalproject-bgx">https://mdecp2018.github.io/finalproject-bgx</a> </p>
+<h4>Python 網際框架</h4>
+<p><a href="http://flask.pocoo.org/">http://flask.pocoo.org/</a></p>
+<p><a href="https://www.djangoproject.com/">https://www.djangoproject.com/</a> </p>
+<h1>電子書</h1>
+<h4>Learn to Program with Python 3 - A Step-by-Step Guide to Programming</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-1-4842-3879-0">https://link.springer.com/book/10.1007/978-1-4842-3879-0</a> </p>
+<h4>Beginning Python - From Novice to Professional</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-1-4842-0028-5">https://link.springer.com/book/10.1007/978-1-4842-0028-5</a> </p>
+<h4>Programming with Python</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-981-10-3277-6">https://link.springer.com/book/10.1007/978-981-10-3277-6</a> </p>
+<h4>Python Recipes Handbook - A Problem-Solution Approach</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-1-4842-0241-8">https://link.springer.com/book/10.1007/978-1-4842-0241-8</a> </p>
+<h4>Beginning Django Web Application Development and Deployment with Python</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-1-4842-2787-9">https://link.springer.com/book/10.1007/978-1-4842-2787-9</a> </p>
+<h4>Python 2 and 3 Compatibility - With Six and Python-Future Libraries</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-1-4842-2955-2">https://link.springer.com/book/10.1007/978-1-4842-2955-2</a> </p>
+<h4>Elementary Mechanics Using Python - A Modern Course Combining Analytical and Numerical Techniques</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-3-319-19596-4">https://link.springer.com/book/10.1007/978-3-319-19596-4</a> (Python2)</p>
+<h4>Programming for Computations - Python A Gentle Introduction to Numerical Simulations with Python</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-3-319-32428-9">https://link.springer.com/book/10.1007/978-3-319-32428-9</a> (Python2)</p>
+<h4>LaTeX in 24 Hours - A Practical Guide for Scientific Writing</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-3-319-47831-9">https://link.springer.com/book/10.1007/978-3-319-47831-9</a> </p>
+<h4>Practical LaTeX</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-3-319-06425-3">https://link.springer.com/book/10.1007/978-3-319-06425-3</a> </p>
+<h4>LaTeX and Friends</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-3-642-23816-1">https://link.springer.com/book/10.1007/978-3-642-23816-1</a> </p>
+<h4>Math into LATEX</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-1-4612-2134-0">https://link.springer.com/book/10.1007/978-1-4612-2134-0</a> </p>
+brython_div = doc["brython_div"]
+brython_div &lt;= canvas
+
+# 準備繪圖畫布
+canvas = doc["taiwan_flag"]
+ctx = canvas.getContext("2d")
+# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
+# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
+# 以下採用 canvas 原始座標繪圖
+flag_w = canvas.width
+flag_h = canvas.height
+circle_x = flag_w/4
+circle_y = flag_h/4
+# 先畫滿地紅
+ctx.fillStyle='rgb(255, 0, 0)'
+ctx.fillRect(0,0,flag_w,flag_h)
+# 再畫青天
+ctx.fillStyle='rgb(0, 0, 150)'
+ctx.fillRect(0,0,flag_w/2,flag_h/2)
+# 畫十二道光芒白日
+ctx.beginPath()
+star_radius = flag_w/8
+angle = 0
+for i in range(24):
+    angle += 5*math.pi*2/12
+    toX = circle_x + math.cos(angle)*star_radius
+    toY = circle_y + math.sin(angle)*star_radius
+    # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
+    if (i):
+        ctx.lineTo(toX, toY)
+    else:
+        ctx.moveTo(toX, toY)
+ctx.closePath()
+# 將填色設為白色
+ctx.fillStyle = '#fff'
+ctx.fill()
+# 白日:藍圈
+ctx.beginPath()
+ctx.arc(circle_x, circle_y, flag_w*17/240, 0, math.pi*2, True)
+ctx.closePath()
+# 填色設為藍色
+ctx.fillStyle = 'rgb(0, 0, 149)'
+ctx.fill()
+# 白日:白心
+ctx.beginPath()
+ctx.arc(circle_x, circle_y, flag_w/16, 0, math.pi*2, True)
+ctx.closePath()
+# 填色設為白色
+ctx.fillStyle = '#fff'
+ctx.fill()
+
+
 <h1>參考資料</h1>
 <h4>Python 教材</h4>
 <p><a href="https://www.python-course.eu">https://www.python-course.eu</a> </p>
