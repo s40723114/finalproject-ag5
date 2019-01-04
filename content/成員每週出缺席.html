@@ -1,0 +1,154 @@
+<!doctype html>
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>Python-Course</title> <link rel="stylesheet" type="text/css" href="./../static/cmsimply.css">
+
+<script type="text/javascript" src="./../static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCSharp.js"></script>
+<link type="text/css" rel="stylesheet" href="./../static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- for LaTeX equations 暫時不用
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+-->
+<!-- 暫時不用
+<script src="./../static/fengari-web.js"></script>
+<script type="text/javascript" src="./../static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.red3border {
+    border: 3px solid red;
+}
+.black3border {
+    border: 3px solid black;
+}
+</style>
+
+<script src="./../static/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("ul.topmenu> li:has(ul) > a").append('<div class="arrow-right"></div>');
+    $("ul.topmenu > li ul li:has(ul) > a").append('<div class="arrow-right"></div>');
+});
+</script>
+
+</head><header><h1>Python-Course</h1> <confmenu>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="sitemap.html">Site Map</a></li>
+<li><a href="./../reveal/index.html">reveal</a></li>
+<li><a href="./../blog/index.html">blog</a></li>
+
+</ul>
+</confmenu></header>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><li><a href='成員介紹.html'>成員介紹</a><li><a href='成員每週出缺席.html'>成員每週出缺席</a><li><a href='每週進度.html'>每週進度</a><ul><li><a href='week10.html'>week10</a><li><a href='week11.html'>week11</a></li></ul><li><a href='PyQt5練習.html'>PyQt5練習</a><li><a href='Python 語法.html'>Python 語法</a><li><a href='繪圖範例.html'>繪圖範例</a><li><a href='參考資料.html'>參考資料</a><li><a href='電子書.html'>電子書</a></li></ul></nav><section>成員介紹 << <a href='成員介紹.html'>Previous</a> <a href='每週進度.html'>Next</a> >> 每週進度<br /><h1>成員每週出缺席</h1>
+<table border="1" style="border-collapse: collapse; width: 100%; height: 294px;">
+<tbody>
+<tr style="height: 49px;">
+<td style="width: 12.5455%; height: 49px;"></td>
+<td style="width: 10%; height: 49px;">w10</td>
+<td style="width: 10.3636%; height: 49px;">w11</td>
+<td style="width: 9.63639%; height: 49px;">w12</td>
+<td style="width: 9.63632%; height: 49px;">w13</td>
+<td style="width: 9.27272%; height: 49px;">w14</td>
+<td style="width: 10.3637%; height: 49px;">w15</td>
+<td style="width: 9.99996%; height: 49px;">w16</td>
+<td style="width: 9.63631%; height: 49px;">w17</td>
+<td style="width: 8.54545%; height: 49px;">w18</td>
+</tr>
+<tr style="height: 49px;">
+<td style="width: 12.5455%; height: 49px;">杜永瀚</td>
+<td style="width: 10%; height: 49px;"><strong>   √</strong></td>
+<td style="width: 10.3636%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 9.63639%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 9.63632%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 9.27272%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 10.3637%; height: 49px;">    <strong>√</strong></td>
+<td style="width: 9.99996%; height: 49px;">    <strong>√</strong></td>
+<td style="width: 9.63631%; height: 49px;">    <strong>√</strong></td>
+<td style="width: 8.54545%; height: 49px;">    <strong>√</strong></td>
+</tr>
+<tr style="height: 49px;">
+<td style="width: 12.5455%; height: 49px;">羅裕傑</td>
+<td style="width: 10%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 10.3636%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 9.63639%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 9.63632%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 9.27272%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 10.3637%; height: 49px;">    <strong>√</strong></td>
+<td style="width: 9.99996%; height: 49px;">    <strong>√</strong></td>
+<td style="width: 9.63631%; height: 49px;">    <strong>√</strong></td>
+<td style="width: 8.54545%; height: 49px;">    <strong>√</strong></td>
+</tr>
+<tr style="height: 49px;">
+<td style="width: 12.5455%; height: 49px;">許嘉紘</td>
+<td style="width: 10%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 10.3636%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 9.63639%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 9.63632%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 9.27272%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 10.3637%; height: 49px;">    <strong>√</strong></td>
+<td style="width: 9.99996%; height: 49px;">    <strong>√</strong></td>
+<td style="width: 9.63631%; height: 49px;">    <strong>√</strong></td>
+<td style="width: 8.54545%; height: 49px;">    <strong>√</strong></td>
+</tr>
+<tr style="height: 49px;">
+<td style="width: 12.5455%; height: 49px;">陳藝晉</td>
+<td style="width: 10%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 10.3636%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 9.63639%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 9.63632%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 9.27272%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 10.3637%; height: 49px;"><b>    <strong>√</strong></b></td>
+<td style="width: 9.99996%; height: 49px;">    <strong>√</strong></td>
+<td style="width: 9.63631%; height: 49px;">    <strong>√</strong></td>
+<td style="width: 8.54545%; height: 49px;">    <strong>√</strong></td>
+</tr>
+<tr style="height: 49px;">
+<td style="width: 12.5455%; height: 49px;">黃譯賢</td>
+<td style="width: 10%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 10.3636%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 9.63639%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 9.63632%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 9.27272%; height: 49px;">   <strong>√</strong></td>
+<td style="width: 10.3637%; height: 49px;">    <strong>√</strong></td>
+<td style="width: 9.99996%; height: 49px;">    <strong>√</strong></td>
+<td style="width: 9.63631%; height: 49px;">    <strong>√</strong></td>
+<td style="width: 8.54545%; height: 49px;">    <strong>√</strong></td>
+</tr>
+</tbody>
+</table><br />成員介紹 << <a href='成員介紹.html'>Previous</a> <a href='每週進度.html'>Next</a> >> 每週進度</section></div></body></html>

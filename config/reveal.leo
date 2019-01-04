@@ -340,7 +340,7 @@ Created by [KMOLab](http://lab.kmol.info/)
 </t>
 <t tx="leo.20190104145324.2">## 溫度程式說明
 
-&lt;iframe src="../images/溫度程式轉換說明.jpg" width="900" height="800" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src="../images/溫度程式轉換說明.jpg" width="1500" height="1200" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
 </t>
 </tnodes>
