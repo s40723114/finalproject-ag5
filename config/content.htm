@@ -11,7 +11,8 @@
 <h4>個人網站:<a href="https://mdecp2018.github.io/site-s40723135/content/index.html">https://mdecp2018.github.io/site-s40723135/content/index.html</a></h4>
 <h4>黃譯賢  期中自評:70</h4>
 <h4>個人網站:<a href="https://mdecp2018.github.io/site-s40723140/content/index.html">https://mdecp2018.github.io/site-s40723140/content/index.html</a></h4>
-<h1>成員每週出缺席</h1>
+<h1>期末個人影片</h1>
+<p><br/>40723114:<a href="https://www.youtube.com/watch?v=eaAyMBdCXqk&amp;feature=youtu.be">https://www.youtube.com/watch?v=eaAyMBdCXqk&amp;feature=youtu.be</a> <br/>40723135:<a href="https://www.youtube.com/watch?v=AMAoE-Bcrho">https://www.youtube.com/watch?v=AMAoE-Bcrho</a></p><h1>成員每週出缺席</h1>
 <table border="1" style="border-collapse: collapse; width: 100%; height: 294px;">
 <tbody>
 <tr style="height: 49px;">
@@ -87,7 +88,8 @@
 <td style="width: 8.54545%; height: 49px;">    <strong>√</strong></td>
 </tr>
 </tbody>
-</table><h1>每週進度</h1>
+</table>
+<h1>每週進度</h1>
 <h2>week10</h2>
 <p>更新p37成最新版本,在新版本中加入的打開eric6的原件,並且由學長教學操作eric6的簡易功能。</p>
 <p>何謂eric6:</p>
@@ -558,7 +560,8 @@
 <p><span>當Python解譯器讀取原始碼時，會執行其中的所有程式碼。而在執行這些程式碼之前，會定義一些特殊變數的值，例如：當該程式碼執行時，是以主程式的位階直接執行時，Python就會將__name__這個變數設為__main__。</span></p>
 <p><span>假如這個程式碼檔案並非以主程式的位階直接執行，而是被導入其他程式中，以模組的位階執行，__name__變數就會被設為該模組的名稱。</span></p>
 <p></p>
-<p></p><h1>Python 語法</h1>
+<p></p>
+<h1>Python 語法</h1>
 <p>Python 3 官方教材: <a href="https://docs.python.org/3/index.html">https://docs.python.org/3/index.html</a> </p>
 <p>Python tutorial: <a href="https://docs.python.org/3/tutorial/index.html">https://docs.python.org/3/tutorial/index.html</a> (英文)</p>
 <p>Python 教學: <a href="https://python-doc-tw.github.io/tutorial/index.html">https://python-doc-tw.github.io/tutorial/index.html</a> </p>
@@ -1593,58 +1596,7 @@ ctx.fill()
 <p><a href="https://link.springer.com/book/10.1007/978-3-642-23816-1">https://link.springer.com/book/10.1007/978-3-642-23816-1</a> </p>
 <h4>Math into LATEX</h4>
 <p><a href="https://link.springer.com/book/10.1007/978-1-4612-2134-0">https://link.springer.com/book/10.1007/978-1-4612-2134-0</a> </p>
-brython_div = doc["brython_div"]
-brython_div &lt;= canvas
-
-# 準備繪圖畫布
-canvas = doc["taiwan_flag"]
-ctx = canvas.getContext("2d")
-# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
-# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
-# 以下採用 canvas 原始座標繪圖
-flag_w = canvas.width
-flag_h = canvas.height
-circle_x = flag_w/4
-circle_y = flag_h/4
-# 先畫滿地紅
-ctx.fillStyle='rgb(255, 0, 0)'
-ctx.fillRect(0,0,flag_w,flag_h)
-# 再畫青天
-ctx.fillStyle='rgb(0, 0, 150)'
-ctx.fillRect(0,0,flag_w/2,flag_h/2)
-# 畫十二道光芒白日
-ctx.beginPath()
-star_radius = flag_w/8
-angle = 0
-for i in range(24):
-    angle += 5*math.pi*2/12
-    toX = circle_x + math.cos(angle)*star_radius
-    toY = circle_y + math.sin(angle)*star_radius
-    # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
-    if (i):
-        ctx.lineTo(toX, toY)
-    else:
-        ctx.moveTo(toX, toY)
-ctx.closePath()
-# 將填色設為白色
-ctx.fillStyle = '#fff'
-ctx.fill()
-# 白日:藍圈
-ctx.beginPath()
-ctx.arc(circle_x, circle_y, flag_w*17/240, 0, math.pi*2, True)
-ctx.closePath()
-# 填色設為藍色
-ctx.fillStyle = 'rgb(0, 0, 149)'
-ctx.fill()
-# 白日:白心
-ctx.beginPath()
-ctx.arc(circle_x, circle_y, flag_w/16, 0, math.pi*2, True)
-ctx.closePath()
-# 填色設為白色
-ctx.fillStyle = '#fff'
-ctx.fill()
-
-
+<p>brython_div = doc["brython_div"] brython_div &lt;= canvas # 準備繪圖畫布 canvas = doc["taiwan_flag"] ctx = canvas.getContext("2d") # 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點 # ctx.setTransform(1, 0, 0, -1, 0, canvas.height) # 以下採用 canvas 原始座標繪圖 flag_w = canvas.width flag_h = canvas.height circle_x = flag_w/4 circle_y = flag_h/4 # 先畫滿地紅 ctx.fillStyle='rgb(255, 0, 0)' ctx.fillRect(0,0,flag_w,flag_h) # 再畫青天 ctx.fillStyle='rgb(0, 0, 150)' ctx.fillRect(0,0,flag_w/2,flag_h/2) # 畫十二道光芒白日 ctx.beginPath() star_radius = flag_w/8 angle = 0 for i in range(24): angle += 5*math.pi*2/12 toX = circle_x + math.cos(angle)*star_radius toY = circle_y + math.sin(angle)*star_radius # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo if (i): ctx.lineTo(toX, toY) else: ctx.moveTo(toX, toY) ctx.closePath() # 將填色設為白色 ctx.fillStyle = '#fff' ctx.fill() # 白日:藍圈 ctx.beginPath() ctx.arc(circle_x, circle_y, flag_w*17/240, 0, math.pi*2, True) ctx.closePath() # 填色設為藍色 ctx.fillStyle = 'rgb(0, 0, 149)' ctx.fill() # 白日:白心 ctx.beginPath() ctx.arc(circle_x, circle_y, flag_w/16, 0, math.pi*2, True) ctx.closePath() # 填色設為白色 ctx.fillStyle = '#fff' ctx.fill()</p>
 <h1>參考資料</h1>
 <h4>Python 教材</h4>
 <p><a href="https://www.python-course.eu">https://www.python-course.eu</a> </p>

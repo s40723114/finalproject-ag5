@@ -11,7 +11,9 @@
 <h4>個人網站:<a href="https://mdecp2018.github.io/site-s40723135/content/index.html">https://mdecp2018.github.io/site-s40723135/content/index.html</a></h4>
 <h4>黃譯賢  期中自評:70</h4>
 <h4>個人網站:<a href="https://mdecp2018.github.io/site-s40723140/content/index.html">https://mdecp2018.github.io/site-s40723140/content/index.html</a></h4>
-<h1>成員每週出缺席</h1>
+<h1>期末個人影片</h1>
+<br/>40723114:<a href="https://www.youtube.com/watch?v=eaAyMBdCXqk&amp;feature=youtu.be">https://www.youtube.com/watch?v=eaAyMBdCXqk&amp;feature=youtu.be</a>
+<br/>40723135:<a href="https://www.youtube.com/watch?v=AMAoE-Bcrho">https://www.youtube.com/watch?v=AMAoE-Bcrho</a><h1>成員每週出缺席</h1>
 <table border="1" style="border-collapse: collapse; width: 100%; height: 294px;">
 <tbody>
 <tr style="height: 49px;">
@@ -87,7 +89,8 @@
 <td style="width: 8.54545%; height: 49px;">    <strong>√</strong></td>
 </tr>
 </tbody>
-</table><h1>每週進度</h1>
+</table>
+<h1>每週進度</h1>
 <h2>week10</h2>
 <p>更新p37成最新版本,在新版本中加入的打開eric6的原件,並且由學長教學操作eric6的簡易功能。</p>
 <p>何謂eric6:</p>
@@ -101,7 +104,465 @@
 <p>heroku與github連接必須在github中加入兩項文字檔和一個資料檔分別為:runtime.txt、procfile、requirements.txt，在檔案中必須加入的文字且大小寫必須要正確，打小寫會影響到之後的成功與否而成功連接上heroku後就能夠直接更改動態網站且可以在heroku中顯示出來。</p>
 <p>另外還有一種現在廣泛使用的軟體為javascrip，在撰寫後難以在回頭審視之前所撰寫的檔案也沒有排版之功能，所以我們用的python來當作學習的工具。</p>
 <p>heroku動態分組網站網址<span style="background-color: #ffffff; color: #626262;">:</span><a href="https://finalproject-ag5.herokuapp.com/">https://finalproject-ag5.herokuapp.com/</a></p>
-<h1>PyQt5練習</h1><p><span>以QWidget建立視窗：</span></p><div><div class="syntaxhighlighter py" id="highlighter_757111"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2"><span>1</span></div><div class="line number2 index1 alt1"><span>2</span></div><div class="line number3 index2 alt2"><span>3</span></div><div class="line number4 index3 alt1"><span>4</span></div><div class="line number5 index4 alt2"><span>5</span></div><div class="line number6 index5 alt1"><span>6</span></div><div class="line number7 index6 alt2"><span>7</span></div><div class="line number8 index7 alt1"><span>8</span></div><div class="line number9 index8 alt2"><span>9</span></div><div class="line number10 index9 alt1"><span>10</span></div><div class="line number11 index10 alt2"><span>11</span></div><div class="line number12 index11 alt1"><span>12</span></div><div class="line number13 index12 alt2"><span>13</span></div><div class="line number14 index13 alt1"><span>14</span></div><div class="line number15 index14 alt2"><span>15</span></div><div class="line number16 index15 alt1"><span>16</span></div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="py keyword">import</code> <code class="py plain">sys</code></div><div class="line number2 index1 alt1"><code class="py keyword">from</code> <code class="py plain">PyQt5.QtWidgets </code><code class="py keyword">import</code> <code class="py plain">QApplication, QWidget</code></div><div class="line number3 index2 alt2">&nbsp;</div><div class="line number4 index3 alt1"><code class="py comments"># 利用 QApplication 類別建立案例</code></div><div class="line number5 index4 alt2"><code class="py plain">app </code><code class="py keyword">=</code> <code class="py plain">QApplication(sys.argv)</code></div><div class="line number6 index5 alt1">&nbsp;</div><div class="line number7 index6 alt2"><code class="py comments"># 無 parent 的部件為視窗</code></div><div class="line number8 index7 alt1"><code class="py plain">window </code><code class="py keyword">=</code> <code class="py plain">QWidget()</code></div><div class="line number9 index8 alt2"><code class="py comments"># 設定視窗屬性</code></div><div class="line number10 index9 alt1"><code class="py plain">window.setGeometry(</code><code class="py value">50</code><code class="py plain">, </code><code class="py value">50</code><code class="py plain">, </code><code class="py value">500</code><code class="py plain">, </code><code class="py value">300</code><code class="py plain">)</code></div><div class="line number11 index10 alt2"><code class="py plain">window.setWindowTitle(</code><code class="py string">'第一個 PyQt5 程式'</code><code class="py plain">)</code></div><div class="line number12 index11 alt1">&nbsp;</div><div class="line number13 index12 alt2"><code class="py comments"># 顯示視窗</code></div><div class="line number14 index13 alt1"><code class="py plain">window.show()</code></div><div class="line number15 index14 alt2"><code class="py comments"># 執行應用程式, 若按右上方 close 按鈕可以 exit</code></div><div class="line number16 index15 alt1"><code class="py plain">sys.exit(app.</code><code class="py keyword">exec</code><code class="py plain">())</code></div></div></td></tr></tbody></table></div></div><p><span>改寫為自建視窗類別物件：</span></p><div><div class="syntaxhighlighter py" id="highlighter_70941"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2"><span>1</span></div><div class="line number2 index1 alt1"><span>2</span></div><div class="line number3 index2 alt2"><span>3</span></div><div class="line number4 index3 alt1"><span>4</span></div><div class="line number5 index4 alt2"><span>五</span></div><div class="line number6 index5 alt1"><span>6</span></div><div class="line number7 index6 alt2"><span>7</span></div><div class="line number8 index7 alt1"><span>8</span></div><div class="line number9 index8 alt2"><span>9</span></div><div class="line number10 index9 alt1"><span>10</span></div><div class="line number11 index10 alt2"><span>11</span></div><div class="line number12 index11 alt1"><span>12</span></div><div class="line number13 index12 alt2"><span>13</span></div><div class="line number14 index13 alt1"><span>14</span></div><div class="line number15 index14 alt2"><span>15</span></div><div class="line number16 index15 alt1"><span>16</span></div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="py keyword">import</code> <code class="py plain">sys</code></div><div class="line number2 index1 alt1"><code class="py keyword">from</code> <code class="py plain">PyQt5.QtWidgets </code><code class="py keyword">import</code> <code class="py plain">QApplication, QWidget</code></div><div class="line number3 index2 alt2">&nbsp;</div><div class="line number4 index3 alt1"><code class="py keyword">class</code> <code class="py plain">window(QWidget):</code></div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py keyword">def</code> <code class="py plain">__init__(</code><code class="py color1">self</code><code class="py plain">):</code></div><div class="line number7 index6 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments"># 啟始時先執行父物件 (即 QWidget) 的建構子</code></div><div class="line number8 index7 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py functions">super</code><code class="py plain">().__init__()</code></div><div class="line number9 index8 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py color1">self</code><code class="py plain">.setGeometry(</code><code class="py value">50</code><code class="py plain">, </code><code class="py value">50</code><code class="py plain">, </code><code class="py value">500</code><code class="py plain">, </code><code class="py value">300</code><code class="py plain">)</code></div><div class="line number10 index9 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py color1">self</code><code class="py plain">.setWindowTitle(</code><code class="py string">'第一個 PyQt5 程式'</code><code class="py plain">)</code></div><div class="line number11 index10 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments"># 案例建立時直接顯示, 也可以建立案例後再顯示</code></div><div class="line number12 index11 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py color1">self</code><code class="py plain">.show()</code></div><div class="line number13 index12 alt2">&nbsp;</div><div class="line number14 index13 alt1"><code class="py plain">app </code><code class="py keyword">=</code> <code class="py plain">QApplication(sys.argv)</code></div><div class="line number15 index14 alt2"><code class="py plain">Gui </code><code class="py keyword">=</code> <code class="py plain">window()</code></div><div class="line number16 index15 alt1"><code class="py plain">sys.exit(app.</code><code class="py keyword">exec</code><code class="py plain">())</code></div></div></td></tr></tbody></table></div></div><p><span>以QMainWindow類別建立視窗：</span></p><div><div class="syntaxhighlighter py" id="highlighter_25880"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2"><span>1</span></div><div class="line number2 index1 alt1"><span>2</span></div><div class="line number3 index2 alt2"><span>3</span></div><div class="line number4 index3 alt1"><span>4</span></div><div class="line number5 index4 alt2"><span>五</span></div><div class="line number6 index5 alt1"><span>6</span></div><div class="line number7 index6 alt2"><span>7</span></div><div class="line number8 index7 alt1"><span>8</span></div><div class="line number9 index8 alt2"><span>9</span></div><div class="line number10 index9 alt1"><span>10</span></div><div class="line number11 index10 alt2"><span>11</span></div><div class="line number12 index11 alt1"><span>12</span></div><div class="line number13 index12 alt2"><span>13</span></div><div class="line number14 index13 alt1"><span>14</span></div><div class="line number15 index14 alt2"><span>15</span></div><div class="line number16 index15 alt1"><span>16</span></div><div class="line number17 index16 alt2"><span>17</span></div><div class="line number18 index17 alt1"><span>18</span></div><div class="line number19 index18 alt2"><span>19</span></div><div class="line number20 index19 alt1"><span>20</span></div><div class="line number21 index20 alt2"><span>21</span></div><div class="line number22 index21 alt1"><span>22</span></div><div class="line number23 index22 alt2"><span>23</span></div><div class="line number24 index23 alt1"><span>24</span></div><div class="line number25 index24 alt2"><span>25</span></div><div class="line number26 index25 alt1"><span>26</span></div><div class="line number27 index26 alt2"><span>27</span></div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="py keyword">import</code> <code class="py plain">sys</code></div><div class="line number2 index1 alt1"><code class="py keyword">from</code> <code class="py plain">PyQt5.QtCore </code><code class="py keyword">import</code> <code class="py plain">QCoreApplication</code></div><div class="line number3 index2 alt2"><code class="py keyword">from</code> <code class="py plain">PyQt5.QtWidgets </code><code class="py keyword">import</code> <code class="py plain">QApplication, QWidget, QMainWindow, QPushButton</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1"><code class="py keyword">class</code> <code class="py plain">window(QMainWindow):</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py keyword">def</code> <code class="py plain">__init__(</code><code class="py color1">self</code><code class="py plain">):</code></div><div class="line number9 index8 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py functions">super</code><code class="py plain">().__init__()</code></div><div class="line number10 index9 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py color1">self</code><code class="py plain">.setGeometry(</code><code class="py value">50</code><code class="py plain">, </code><code class="py value">50</code><code class="py plain">, </code><code class="py value">500</code><code class="py plain">, </code><code class="py value">300</code><code class="py plain">)</code></div><div class="line number11 index10 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py color1">self</code><code class="py plain">.setWindowTitle(</code><code class="py string">'第一個 PyQt5 程式'</code><code class="py plain">)</code></div><div class="line number12 index11 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py color1">self</code><code class="py plain">.addExitButton()</code></div><div class="line number13 index12 alt2">&nbsp;</div><div class="line number14 index13 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py keyword">def</code> <code class="py plain">addExitButton(</code><code class="py color1">self</code><code class="py plain">):</code></div><div class="line number15 index14 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">btn </code><code class="py keyword">=</code> <code class="py plain">QPushButton(</code><code class="py string">'退出'</code><code class="py plain">, </code><code class="py color1">self</code><code class="py plain">)</code></div><div class="line number16 index15 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">btn.clicked.connect(QCoreApplication.instance().quit)</code></div><div class="line number17 index16 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">btn.resize(</code><code class="py value">100</code><code class="py plain">, </code><code class="py value">100</code><code class="py plain">)</code></div><div class="line number18 index17 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">btn.move(</code><code class="py value">100</code><code class="py plain">, </code><code class="py value">100</code><code class="py plain">)</code></div><div class="line number19 index18 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments"># 顯示 window</code></div><div class="line number20 index19 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py color1">self</code><code class="py plain">.show()</code></div><div class="line number21 index20 alt2">&nbsp;</div><div class="line number22 index21 alt1"><code class="py keyword">def</code> <code class="py plain">run():</code></div><div class="line number23 index22 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">app </code><code class="py keyword">=</code> <code class="py plain">QApplication(sys.argv)</code></div><div class="line number24 index23 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">Gui </code><code class="py keyword">=</code> <code class="py plain">window()</code></div><div class="line number25 index24 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">sys.exit(app.</code><code class="py keyword">exec</code><code class="py plain">())</code></div><div class="line number26 index25 alt1">&nbsp;</div><div class="line number27 index26 alt2"><code class="py plain">run()</code></div></div></td></tr></tbody></table></div></div><p><span>視窗關閉時列印訊息：</span></p><div><div class="syntaxhighlighter py" id="highlighter_298674"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2"><span>1</span></div><div class="line number2 index1 alt1"><span>2</span></div><div class="line number3 index2 alt2"><span>3</span></div><div class="line number4 index3 alt1"><span>4</span></div><div class="line number5 index4 alt2"><span>五</span></div><div class="line number6 index5 alt1"><span>6</span></div><div class="line number7 index6 alt2"><span>7</span></div><div class="line number8 index7 alt1"><span>8</span></div><div class="line number9 index8 alt2"><span>9</span></div><div class="line number10 index9 alt1"><span>10</span></div><div class="line number11 index10 alt2"><span>11</span></div><div class="line number12 index11 alt1"><span>12</span></div><div class="line number13 index12 alt2"><span>13</span></div><div class="line number14 index13 alt1"><span>14</span></div><div class="line number15 index14 alt2"><span>15</span></div><div class="line number16 index15 alt1"><span>16</span></div><div class="line number17 index16 alt2"><span>17</span></div><div class="line number18 index17 alt1"><span>18</span></div><div class="line number19 index18 alt2"><span>19</span></div><div class="line number20 index19 alt1"><span>20</span></div><div class="line number21 index20 alt2"><span>21</span></div><div class="line number22 index21 alt1"><span>22</span></div><div class="line number23 index22 alt2"><span>23</span></div><div class="line number24 index23 alt1"><span>24</span></div><div class="line number25 index24 alt2"><span>25</span></div><div class="line number26 index25 alt1"><span>26</span></div><div class="line number27 index26 alt2"><span>27</span></div><div class="line number28 index27 alt1"><span>28</span></div><div class="line number29 index28 alt2"><span>29</span></div><div class="line number30 index29 alt1"><span>三十</span></div><div class="line number31 index30 alt2"><span>31</span></div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="py keyword">import</code> <code class="py plain">sys</code></div><div class="line number2 index1 alt1"><code class="py keyword">from</code> <code class="py plain">PyQt5.QtCore </code><code class="py keyword">import</code> <code class="py plain">QCoreApplication</code></div><div class="line number3 index2 alt2"><code class="py keyword">from</code> <code class="py plain">PyQt5.QtWidgets </code><code class="py keyword">import</code> <code class="py plain">QApplication, QWidget, QMainWindow, QPushButton</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1"><code class="py keyword">class</code> <code class="py plain">window(QMainWindow):</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py keyword">def</code> <code class="py plain">__init__(</code><code class="py color1">self</code><code class="py plain">):</code></div><div class="line number9 index8 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py functions">super</code><code class="py plain">().__init__()</code></div><div class="line number10 index9 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py color1">self</code><code class="py plain">.setGeometry(</code><code class="py value">50</code><code class="py plain">, </code><code class="py value">50</code><code class="py plain">, </code><code class="py value">500</code><code class="py plain">, </code><code class="py value">300</code><code class="py plain">)</code></div><div class="line number11 index10 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py color1">self</code><code class="py plain">.setWindowTitle(</code><code class="py string">'第一個 PyQt5 程式'</code><code class="py plain">)</code></div><div class="line number12 index11 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py color1">self</code><code class="py plain">.addQuitButton()</code></div><div class="line number13 index12 alt2">&nbsp;</div><div class="line number14 index13 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py keyword">def</code> <code class="py plain">addQuitButton(</code><code class="py color1">self</code><code class="py plain">):</code></div><div class="line number15 index14 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">btn </code><code class="py keyword">=</code> <code class="py plain">QPushButton(</code><code class="py string">'退出'</code><code class="py plain">, </code><code class="py color1">self</code><code class="py plain">)</code></div><div class="line number16 index15 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">btn.clicked.connect(</code><code class="py color1">self</code><code class="py plain">.close_application)</code></div><div class="line number17 index16 alt2">&nbsp;</div><div class="line number18 index17 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">btn.resize(btn.sizeHint())&nbsp; </code><code class="py comments">#set to acceptable size automatic</code></div><div class="line number19 index18 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">btn.move(</code><code class="py value">0</code><code class="py plain">, </code><code class="py value">0</code><code class="py plain">)</code></div><div class="line number20 index19 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py color1">self</code><code class="py plain">.show()</code></div><div class="line number21 index20 alt2">&nbsp;</div><div class="line number22 index21 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py keyword">def</code> <code class="py plain">close_application(</code><code class="py color1">self</code><code class="py plain">):</code></div><div class="line number23 index22 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">'關閉應用程式'</code><code class="py plain">)</code></div><div class="line number24 index23 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">sys.exit()</code></div><div class="line number25 index24 alt2">&nbsp;</div><div class="line number26 index25 alt1"><code class="py keyword">def</code> <code class="py plain">run():</code></div><div class="line number27 index26 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">app </code><code class="py keyword">=</code> <code class="py plain">QApplication(sys.argv)</code></div><div class="line number28 index27 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">Gui </code><code class="py keyword">=</code> <code class="py plain">window()</code></div><div class="line number29 index28 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">sys.exit(app.</code><code class="py keyword">exec</code><code class="py plain">())</code></div><div class="line number30 index29 alt1">&nbsp;</div><div class="line number31 index30 alt2"><code class="py plain">run()</code></div></div></td></tr></tbody></table></div></div><p><a href="http://zetcode.com/gui/pyqt5/"><span>http://zetcode.com/gui/pyqt5/</span></a></p><div><div class="syntaxhighlighter py" id="highlighter_167807"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2"><span>1</span></div><div class="line number2 index1 alt1"><span>2</span></div><div class="line number3 index2 alt2"><span>3</span></div><div class="line number4 index3 alt1"><span>4</span></div><div class="line number5 index4 alt2"><span>五</span></div><div class="line number6 index5 alt1"><span>6</span></div><div class="line number7 index6 alt2"><span>7</span></div><div class="line number8 index7 alt1"><span>8</span></div><div class="line number9 index8 alt2"><span>9</span></div><div class="line number10 index9 alt1"><span>10</span></div><div class="line number11 index10 alt2"><span>11</span></div><div class="line number12 index11 alt1"><span>12</span></div><div class="line number13 index12 alt2"><span>13</span></div><div class="line number14 index13 alt1"><span>14</span></div><div class="line number15 index14 alt2"><span>15</span></div><div class="line number16 index15 alt1"><span>16</span></div><div class="line number17 index16 alt2"><span>17</span></div><div class="line number18 index17 alt1"><span>18</span></div><div class="line number19 index18 alt2"><span>19</span></div><div class="line number20 index19 alt1"><span>20</span></div><div class="line number21 index20 alt2"><span>21</span></div><div class="line number22 index21 alt1"><span>22</span></div><div class="line number23 index22 alt2"><span>23</span></div><div class="line number24 index23 alt1"><span>24</span></div><div class="line number25 index24 alt2"><span>25</span></div><div class="line number26 index25 alt1"><span>26</span></div><div class="line number27 index26 alt2"><span>27</span></div><div class="line number28 index27 alt1"><span>28</span></div><div class="line number29 index28 alt2"><span>29</span></div><div class="line number30 index29 alt1"><span>三十</span></div><div class="line number31 index30 alt2"><span>31</span></div><div class="line number32 index31 alt1"><span>32</span></div><div class="line number33 index32 alt2"><span>33</span></div><div class="line number34 index33 alt1"><span>34</span></div><div class="line number35 index34 alt2"><span>35</span></div><div class="line number36 index35 alt1"><span>36</span></div><div class="line number37 index36 alt2"><span>37</span></div><div class="line number38 index37 alt1"><span>38</span></div><div class="line number39 index38 alt2"><span>39</span></div><div class="line number40 index39 alt1"><span>40</span></div><div class="line number41 index40 alt2"><span>41</span></div><div class="line number42 index41 alt1"><span>42</span></div><div class="line number43 index42 alt2"><span>43</span></div><div class="line number44 index43 alt1"><span>44</span></div><div class="line number45 index44 alt2"><span>45</span></div><div class="line number46 index45 alt1"><span>46</span></div><div class="line number47 index46 alt2"><span>47</span></div><div class="line number48 index47 alt1"><span>48</span></div><div class="line number49 index48 alt2"><span>49</span></div><div class="line number50 index49 alt1"><span>50</span></div><div class="line number51 index50 alt2"><span>51</span></div><div class="line number52 index51 alt1"><span>52</span></div><div class="line number53 index52 alt2"><span>53</span></div><div class="line number54 index53 alt1"><span>54</span></div><div class="line number55 index54 alt2"><span>55</span></div><div class="line number56 index55 alt1"><span>56</span></div><div class="line number57 index56 alt2"><span>57</span></div><div class="line number58 index57 alt1"><span>58</span></div><div class="line number59 index58 alt2"><span>59</span></div><div class="line number60 index59 alt1"><span>60</span></div><div class="line number61 index60 alt2"><span>61</span></div><div class="line number62 index61 alt1"><span>62</span></div><div class="line number63 index62 alt2"><span>63</span></div><div class="line number64 index63 alt1"><span>64</span></div><div class="line number65 index64 alt2"><span>65</span></div><div class="line number66 index65 alt1"><span>66</span></div><div class="line number67 index66 alt2"><span>67</span></div><div class="line number68 index67 alt1"><span>68</span></div><div class="line number69 index68 alt2"><span>69</span></div><div class="line number70 index69 alt1"><span>70</span></div><div class="line number71 index70 alt2"><span>71</span></div><div class="line number72 index71 alt1"><span>72</span></div><div class="line number73 index72 alt2"><span>73</span></div><div class="line number74 index73 alt1"><span>74</span></div><div class="line number75 index74 alt2"><span>75</span></div><div class="line number76 index75 alt1"><span>76</span></div><div class="line number77 index76 alt2"><span>77</span></div><div class="line number78 index77 alt1"><span>78</span></div><div class="line number79 index78 alt2"><span>79</span></div><div class="line number80 index79 alt1"><span>80</span></div><div class="line number81 index80 alt2"><span>81</span></div><div class="line number82 index81 alt1"><span>82</span></div><div class="line number83 index82 alt2"><span>83</span></div><div class="line number84 index83 alt1"><span>84</span></div><div class="line number85 index84 alt2"><span>85</span></div><div class="line number86 index85 alt1"><span>86</span></div><div class="line number87 index86 alt2"><span>87</span></div><div class="line number88 index87 alt1"><span>88</span></div><div class="line number89 index88 alt2"><span>89</span></div><div class="line number90 index89 alt1"><span>90</span></div><div class="line number91 index90 alt2"><span>91</span></div><div class="line number92 index91 alt1"><span>92</span></div><div class="line number93 index92 alt2"><span>93</span></div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="py comments">#!/usr/bin/python3</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="py keyword">import</code> <code class="py plain">sys</code></div><div class="line number4 index3 alt1"><code class="py keyword">from</code> <code class="py plain">PyQt5.QtCore </code><code class="py keyword">import</code> <code class="py plain">QDateTime, Qt</code></div><div class="line number5 index4 alt2"><code class="py comments"># stage 1</code></div><div class="line number6 index5 alt1"><code class="py comments">#from PyQt5.QtWidgets import QApplication, QWidget</code></div><div class="line number7 index6 alt2"><code class="py comments"># stage 2</code></div><div class="line number8 index7 alt1"><code class="py comments">#from PyQt5.QtWidgets import QMainWindow, QAction, qApp, QApplication</code></div><div class="line number9 index8 alt2"><code class="py comments"># stage 3</code></div><div class="line number10 index9 alt1"><code class="py keyword">from</code> <code class="py plain">PyQt5.QtWidgets </code><code class="py keyword">import</code> <code class="py plain">QMainWindow, QAction, qApp, QApplication, QMenu</code></div><div class="line number11 index10 alt2"><code class="py keyword">from</code> <code class="py plain">PyQt5.QtGui </code><code class="py keyword">import</code> <code class="py plain">QIcon</code></div><div class="line number12 index11 alt1">&nbsp;</div><div class="line number13 index12 alt2"><code class="py plain">now </code><code class="py keyword">=</code> <code class="py plain">QDateTime.currentDateTime()</code></div><div class="line number14 index13 alt1">&nbsp;</div><div class="line number15 index14 alt2"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"Today:"</code><code class="py plain">, now.toString(Qt.ISODate))</code></div><div class="line number16 index15 alt1"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"Adding 12 days: {0}"</code><code class="py plain">.</code><code class="py functions">format</code><code class="py plain">(now.addDays(</code><code class="py value">12</code><code class="py plain">).toString(Qt.ISODate)))</code></div><div class="line number17 index16 alt2"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"Subtracting 22 days: {0}"</code><code class="py plain">.</code><code class="py functions">format</code><code class="py plain">(now.addDays(</code><code class="py keyword">-</code><code class="py value">22</code><code class="py plain">).toString(Qt.ISODate)))</code></div><div class="line number18 index17 alt1">&nbsp;</div><div class="line number19 index18 alt2"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"Adding 50 seconds: {0}"</code><code class="py plain">.</code><code class="py functions">format</code><code class="py plain">(now.addSecs(</code><code class="py value">50</code><code class="py plain">).toString(Qt.ISODate)))</code></div><div class="line number20 index19 alt1"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"Adding 3 months: {0}"</code><code class="py plain">.</code><code class="py functions">format</code><code class="py plain">(now.addMonths(</code><code class="py value">3</code><code class="py plain">).toString(Qt.ISODate)))</code></div><div class="line number21 index20 alt2"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"Adding 12 years: {0}"</code><code class="py plain">.</code><code class="py functions">format</code><code class="py plain">(now.addYears(</code><code class="py value">12</code><code class="py plain">).toString(Qt.ISODate)))</code></div><div class="line number22 index21 alt1">&nbsp;</div><div class="line number23 index22 alt2"><code class="py keyword">class</code> <code class="py plain">Example(QMainWindow):</code></div><div class="line number24 index23 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div><div class="line number25 index24 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py keyword">def</code> <code class="py plain">__init__(</code><code class="py color1">self</code><code class="py plain">):</code></div><div class="line number26 index25 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py functions">super</code><code class="py plain">().__init__()</code></div><div class="line number27 index26 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py color1">self</code><code class="py plain">.initUI()</code></div><div class="line number28 index27 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div><div class="line number29 index28 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div><div class="line number30 index29 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py keyword">def</code> <code class="py plain">initUI(</code><code class="py color1">self</code><code class="py plain">):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </code></div><div class="line number31 index30 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">'''</code></div><div class="line number32 index31 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments"># stage 1</code></div><div class="line number33 index32 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">self.statusBar().showMessage('Ready')</code></div><div class="line number34 index33 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div><div class="line number35 index34 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">self.setGeometry(300, 300, 250, 150)</code></div><div class="line number36 index35 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">self.setWindowTitle('Statusbar')&nbsp;&nbsp;&nbsp; </code></div><div class="line number37 index36 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">self.show()</code></div><div class="line number38 index37 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">'''</code></div><div class="line number39 index38 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div><div class="line number40 index39 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">'''</code></div><div class="line number41 index40 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments"># stage 2</code></div><div class="line number42 index41 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">exitAct = QAction(QIcon('exit.png'), '&amp;Exit', self)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </code></div><div class="line number43 index42 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">exitAct.setShortcut('Ctrl+Q')</code></div><div class="line number44 index43 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">exitAct.setStatusTip('Exit application')</code></div><div class="line number45 index44 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">exitAct.triggered.connect(qApp.quit)</code></div><div class="line number46 index45 alt1">&nbsp;</div><div class="line number47 index46 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">self.statusBar()</code></div><div class="line number48 index47 alt1">&nbsp;</div><div class="line number49 index48 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">menubar = self.menuBar()</code></div><div class="line number50 index49 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">fileMenu = menubar.addMenu('&amp;File')</code></div><div class="line number51 index50 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">fileMenu.addAction(exitAct)</code></div><div class="line number52 index51 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div><div class="line number53 index52 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">self.setGeometry(300, 300, 300, 200)</code></div><div class="line number54 index53 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">self.setWindowTitle('Simple menu')&nbsp;&nbsp;&nbsp; </code></div><div class="line number55 index54 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">self.show()</code></div><div class="line number56 index55 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">'''</code></div><div class="line number57 index56 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div><div class="line number58 index57 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">menubar </code><code class="py keyword">=</code> <code class="py color1">self</code><code class="py plain">.menuBar()</code></div><div class="line number59 index58 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">fileMenu </code><code class="py keyword">=</code> <code class="py plain">menubar.addMenu(</code><code class="py string">'File'</code><code class="py plain">)</code></div><div class="line number60 index59 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div><div class="line number61 index60 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">impMenu </code><code class="py keyword">=</code> <code class="py plain">QMenu(</code><code class="py string">'Import'</code><code class="py plain">, </code><code class="py color1">self</code><code class="py plain">)</code></div><div class="line number62 index61 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">impAct </code><code class="py keyword">=</code> <code class="py plain">QAction(</code><code class="py string">'Import mail'</code><code class="py plain">, </code><code class="py color1">self</code><code class="py plain">) </code></div><div class="line number63 index62 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">impMenu.addAction(impAct)</code></div><div class="line number64 index63 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div><div class="line number65 index64 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments"># 加入 QAction</code></div><div class="line number66 index65 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">newAct </code><code class="py keyword">=</code> <code class="py plain">QAction(</code><code class="py string">'New'</code><code class="py plain">, </code><code class="py color1">self</code><code class="py plain">)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </code></div><div class="line number67 index66 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">fileMenu.addAction(newAct)</code></div><div class="line number68 index67 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div><div class="line number69 index68 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">newAct1 </code><code class="py keyword">=</code> <code class="py plain">QAction(</code><code class="py string">'New1'</code><code class="py plain">, </code><code class="py color1">self</code><code class="py plain">)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </code></div><div class="line number70 index69 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">fileMenu.addAction(newAct1)</code></div><div class="line number71 index70 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div><div class="line number72 index71 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments"># 加入 QMenu</code></div><div class="line number73 index72 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">fileMenu.addMenu(impMenu)</code></div><div class="line number74 index73 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div><div class="line number75 index74 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py color1">self</code><code class="py plain">.setGeometry(</code><code class="py value">300</code><code class="py plain">, </code><code class="py value">300</code><code class="py plain">, </code><code class="py value">300</code><code class="py plain">, </code><code class="py value">200</code><code class="py plain">)</code></div><div class="line number76 index75 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py color1">self</code><code class="py plain">.setWindowTitle(</code><code class="py string">'Submenu'</code><code class="py plain">)&nbsp;&nbsp;&nbsp; </code></div><div class="line number77 index76 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py color1">self</code><code class="py plain">.show()</code></div><div class="line number78 index77 alt1">&nbsp;</div><div class="line number79 index78 alt2">&nbsp;</div><div class="line number80 index79 alt1"><code class="py keyword">if</code> <code class="py plain">__name__ </code><code class="py keyword">=</code><code class="py keyword">=</code> <code class="py string">'__main__'</code><code class="py plain">:</code></div><div class="line number81 index80 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">'''</code></div><div class="line number82 index81 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">app = QApplication(sys.argv)</code></div><div class="line number83 index82 alt2">&nbsp;</div><div class="line number84 index83 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">w = QWidget()</code></div><div class="line number85 index84 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">w.resize(250, 150)</code></div><div class="line number86 index85 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">w.move(300, 300)</code></div><div class="line number87 index86 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">w.setWindowTitle('Simple')</code></div><div class="line number88 index87 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">w.show()</code></div><div class="line number89 index88 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py comments">'''</code></div><div class="line number90 index89 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">app </code><code class="py keyword">=</code> <code class="py plain">QApplication(sys.argv)</code></div><div class="line number91 index90 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">ex </code><code class="py keyword">=</code> <code class="py plain">Example()</code></div><div class="line number92 index91 alt1"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div><div class="line number93 index92 alt2"><code class="py spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="py plain">sys.exit(app.</code><code class="py keyword">exec</code><code class="py plain">())&lt;br&gt;&lt;br&gt;&lt;br&gt;</code></div></div></td></tr></tbody></table></div></div><p><span>有關if __name__ =='__ main__'：</span></p><p><a href="https://stackoverflow.com/questions/419163/what-does-if-name-main-do"><span>https://stackoverflow.com/questions/419163/what-does-if-name-main-do</span></a></p><p><span>當Python解譯器讀取原始碼時，會執行其中的所有程式碼。而在執行這些程式碼之前，會定義一些特殊變數的值，例如：當該程式碼執行時，是以主程式的位階直接執行時，Python就會將__name__這個變數設為__main__。</span></p><p><span>假如這個程式碼檔案並非以主程式的位階直接執行，而是被導入其他程式中，以模組的位階執行，__name__變數就會被設為該模組的名稱。</span></p><p></p><p></p><h1>Python 語法</h1>
+<h1>PyQt5練習</h1>
+<p><span>以QWidget建立視窗：</span></p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_757111">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2"><span>1</span></div>
+<div class="line number2 index1 alt1"><span>2</span></div>
+<div class="line number3 index2 alt2"><span>3</span></div>
+<div class="line number4 index3 alt1"><span>4</span></div>
+<div class="line number5 index4 alt2"><span>5</span></div>
+<div class="line number6 index5 alt1"><span>6</span></div>
+<div class="line number7 index6 alt2"><span>7</span></div>
+<div class="line number8 index7 alt1"><span>8</span></div>
+<div class="line number9 index8 alt2"><span>9</span></div>
+<div class="line number10 index9 alt1"><span>10</span></div>
+<div class="line number11 index10 alt2"><span>11</span></div>
+<div class="line number12 index11 alt1"><span>12</span></div>
+<div class="line number13 index12 alt2"><span>13</span></div>
+<div class="line number14 index13 alt1"><span>14</span></div>
+<div class="line number15 index14 alt2"><span>15</span></div>
+<div class="line number16 index15 alt1"><span>16</span></div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py keyword">import</code> <code class="py plain">sys</code></div>
+<div class="line number2 index1 alt1"><code class="py keyword">from</code> <code class="py plain">PyQt5.QtWidgets </code><code class="py keyword">import</code> <code class="py plain">QApplication, QWidget</code></div>
+<div class="line number3 index2 alt2"> </div>
+<div class="line number4 index3 alt1"><code class="py comments"># 利用 QApplication 類別建立案例</code></div>
+<div class="line number5 index4 alt2"><code class="py plain">app </code><code class="py keyword">=</code> <code class="py plain">QApplication(sys.argv)</code></div>
+<div class="line number6 index5 alt1"> </div>
+<div class="line number7 index6 alt2"><code class="py comments"># 無 parent 的部件為視窗</code></div>
+<div class="line number8 index7 alt1"><code class="py plain">window </code><code class="py keyword">=</code> <code class="py plain">QWidget()</code></div>
+<div class="line number9 index8 alt2"><code class="py comments"># 設定視窗屬性</code></div>
+<div class="line number10 index9 alt1"><code class="py plain">window.setGeometry(</code><code class="py value">50</code><code class="py plain">, </code><code class="py value">50</code><code class="py plain">, </code><code class="py value">500</code><code class="py plain">, </code><code class="py value">300</code><code class="py plain">)</code></div>
+<div class="line number11 index10 alt2"><code class="py plain">window.setWindowTitle(</code><code class="py string">'第一個 PyQt5 程式'</code><code class="py plain">)</code></div>
+<div class="line number12 index11 alt1"> </div>
+<div class="line number13 index12 alt2"><code class="py comments"># 顯示視窗</code></div>
+<div class="line number14 index13 alt1"><code class="py plain">window.show()</code></div>
+<div class="line number15 index14 alt2"><code class="py comments"># 執行應用程式, 若按右上方 close 按鈕可以 exit</code></div>
+<div class="line number16 index15 alt1"><code class="py plain">sys.exit(app.</code><code class="py keyword">exec</code><code class="py plain">())</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><span>改寫為自建視窗類別物件：</span></p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_70941">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2"><span>1</span></div>
+<div class="line number2 index1 alt1"><span>2</span></div>
+<div class="line number3 index2 alt2"><span>3</span></div>
+<div class="line number4 index3 alt1"><span>4</span></div>
+<div class="line number5 index4 alt2"><span>五</span></div>
+<div class="line number6 index5 alt1"><span>6</span></div>
+<div class="line number7 index6 alt2"><span>7</span></div>
+<div class="line number8 index7 alt1"><span>8</span></div>
+<div class="line number9 index8 alt2"><span>9</span></div>
+<div class="line number10 index9 alt1"><span>10</span></div>
+<div class="line number11 index10 alt2"><span>11</span></div>
+<div class="line number12 index11 alt1"><span>12</span></div>
+<div class="line number13 index12 alt2"><span>13</span></div>
+<div class="line number14 index13 alt1"><span>14</span></div>
+<div class="line number15 index14 alt2"><span>15</span></div>
+<div class="line number16 index15 alt1"><span>16</span></div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py keyword">import</code> <code class="py plain">sys</code></div>
+<div class="line number2 index1 alt1"><code class="py keyword">from</code> <code class="py plain">PyQt5.QtWidgets </code><code class="py keyword">import</code> <code class="py plain">QApplication, QWidget</code></div>
+<div class="line number3 index2 alt2"> </div>
+<div class="line number4 index3 alt1"><code class="py keyword">class</code> <code class="py plain">window(QWidget):</code></div>
+<div class="line number5 index4 alt2"> </div>
+<div class="line number6 index5 alt1"><code class="py spaces">    </code><code class="py keyword">def</code> <code class="py plain">__init__(</code><code class="py color1">self</code><code class="py plain">):</code></div>
+<div class="line number7 index6 alt2"><code class="py spaces">        </code><code class="py comments"># 啟始時先執行父物件 (即 QWidget) 的建構子</code></div>
+<div class="line number8 index7 alt1"><code class="py spaces">        </code><code class="py functions">super</code><code class="py plain">().__init__()</code></div>
+<div class="line number9 index8 alt2"><code class="py spaces">        </code><code class="py color1">self</code><code class="py plain">.setGeometry(</code><code class="py value">50</code><code class="py plain">, </code><code class="py value">50</code><code class="py plain">, </code><code class="py value">500</code><code class="py plain">, </code><code class="py value">300</code><code class="py plain">)</code></div>
+<div class="line number10 index9 alt1"><code class="py spaces">        </code><code class="py color1">self</code><code class="py plain">.setWindowTitle(</code><code class="py string">'第一個 PyQt5 程式'</code><code class="py plain">)</code></div>
+<div class="line number11 index10 alt2"><code class="py spaces">        </code><code class="py comments"># 案例建立時直接顯示, 也可以建立案例後再顯示</code></div>
+<div class="line number12 index11 alt1"><code class="py spaces">        </code><code class="py color1">self</code><code class="py plain">.show()</code></div>
+<div class="line number13 index12 alt2"> </div>
+<div class="line number14 index13 alt1"><code class="py plain">app </code><code class="py keyword">=</code> <code class="py plain">QApplication(sys.argv)</code></div>
+<div class="line number15 index14 alt2"><code class="py plain">Gui </code><code class="py keyword">=</code> <code class="py plain">window()</code></div>
+<div class="line number16 index15 alt1"><code class="py plain">sys.exit(app.</code><code class="py keyword">exec</code><code class="py plain">())</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><span>以QMainWindow類別建立視窗：</span></p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_25880">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2"><span>1</span></div>
+<div class="line number2 index1 alt1"><span>2</span></div>
+<div class="line number3 index2 alt2"><span>3</span></div>
+<div class="line number4 index3 alt1"><span>4</span></div>
+<div class="line number5 index4 alt2"><span>五</span></div>
+<div class="line number6 index5 alt1"><span>6</span></div>
+<div class="line number7 index6 alt2"><span>7</span></div>
+<div class="line number8 index7 alt1"><span>8</span></div>
+<div class="line number9 index8 alt2"><span>9</span></div>
+<div class="line number10 index9 alt1"><span>10</span></div>
+<div class="line number11 index10 alt2"><span>11</span></div>
+<div class="line number12 index11 alt1"><span>12</span></div>
+<div class="line number13 index12 alt2"><span>13</span></div>
+<div class="line number14 index13 alt1"><span>14</span></div>
+<div class="line number15 index14 alt2"><span>15</span></div>
+<div class="line number16 index15 alt1"><span>16</span></div>
+<div class="line number17 index16 alt2"><span>17</span></div>
+<div class="line number18 index17 alt1"><span>18</span></div>
+<div class="line number19 index18 alt2"><span>19</span></div>
+<div class="line number20 index19 alt1"><span>20</span></div>
+<div class="line number21 index20 alt2"><span>21</span></div>
+<div class="line number22 index21 alt1"><span>22</span></div>
+<div class="line number23 index22 alt2"><span>23</span></div>
+<div class="line number24 index23 alt1"><span>24</span></div>
+<div class="line number25 index24 alt2"><span>25</span></div>
+<div class="line number26 index25 alt1"><span>26</span></div>
+<div class="line number27 index26 alt2"><span>27</span></div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py keyword">import</code> <code class="py plain">sys</code></div>
+<div class="line number2 index1 alt1"><code class="py keyword">from</code> <code class="py plain">PyQt5.QtCore </code><code class="py keyword">import</code> <code class="py plain">QCoreApplication</code></div>
+<div class="line number3 index2 alt2"><code class="py keyword">from</code> <code class="py plain">PyQt5.QtWidgets </code><code class="py keyword">import</code> <code class="py plain">QApplication, QWidget, QMainWindow, QPushButton</code></div>
+<div class="line number4 index3 alt1"> </div>
+<div class="line number5 index4 alt2"> </div>
+<div class="line number6 index5 alt1"><code class="py keyword">class</code> <code class="py plain">window(QMainWindow):</code></div>
+<div class="line number7 index6 alt2"> </div>
+<div class="line number8 index7 alt1"><code class="py spaces">    </code><code class="py keyword">def</code> <code class="py plain">__init__(</code><code class="py color1">self</code><code class="py plain">):</code></div>
+<div class="line number9 index8 alt2"><code class="py spaces">        </code><code class="py functions">super</code><code class="py plain">().__init__()</code></div>
+<div class="line number10 index9 alt1"><code class="py spaces">        </code><code class="py color1">self</code><code class="py plain">.setGeometry(</code><code class="py value">50</code><code class="py plain">, </code><code class="py value">50</code><code class="py plain">, </code><code class="py value">500</code><code class="py plain">, </code><code class="py value">300</code><code class="py plain">)</code></div>
+<div class="line number11 index10 alt2"><code class="py spaces">        </code><code class="py color1">self</code><code class="py plain">.setWindowTitle(</code><code class="py string">'第一個 PyQt5 程式'</code><code class="py plain">)</code></div>
+<div class="line number12 index11 alt1"><code class="py spaces">        </code><code class="py color1">self</code><code class="py plain">.addExitButton()</code></div>
+<div class="line number13 index12 alt2"> </div>
+<div class="line number14 index13 alt1"><code class="py spaces">    </code><code class="py keyword">def</code> <code class="py plain">addExitButton(</code><code class="py color1">self</code><code class="py plain">):</code></div>
+<div class="line number15 index14 alt2"><code class="py spaces">        </code><code class="py plain">btn </code><code class="py keyword">=</code> <code class="py plain">QPushButton(</code><code class="py string">'退出'</code><code class="py plain">, </code><code class="py color1">self</code><code class="py plain">)</code></div>
+<div class="line number16 index15 alt1"><code class="py spaces">        </code><code class="py plain">btn.clicked.connect(QCoreApplication.instance().quit)</code></div>
+<div class="line number17 index16 alt2"><code class="py spaces">        </code><code class="py plain">btn.resize(</code><code class="py value">100</code><code class="py plain">, </code><code class="py value">100</code><code class="py plain">)</code></div>
+<div class="line number18 index17 alt1"><code class="py spaces">        </code><code class="py plain">btn.move(</code><code class="py value">100</code><code class="py plain">, </code><code class="py value">100</code><code class="py plain">)</code></div>
+<div class="line number19 index18 alt2"><code class="py spaces">        </code><code class="py comments"># 顯示 window</code></div>
+<div class="line number20 index19 alt1"><code class="py spaces">        </code><code class="py color1">self</code><code class="py plain">.show()</code></div>
+<div class="line number21 index20 alt2"> </div>
+<div class="line number22 index21 alt1"><code class="py keyword">def</code> <code class="py plain">run():</code></div>
+<div class="line number23 index22 alt2"><code class="py spaces">    </code><code class="py plain">app </code><code class="py keyword">=</code> <code class="py plain">QApplication(sys.argv)</code></div>
+<div class="line number24 index23 alt1"><code class="py spaces">    </code><code class="py plain">Gui </code><code class="py keyword">=</code> <code class="py plain">window()</code></div>
+<div class="line number25 index24 alt2"><code class="py spaces">    </code><code class="py plain">sys.exit(app.</code><code class="py keyword">exec</code><code class="py plain">())</code></div>
+<div class="line number26 index25 alt1"> </div>
+<div class="line number27 index26 alt2"><code class="py plain">run()</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><span>視窗關閉時列印訊息：</span></p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_298674">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2"><span>1</span></div>
+<div class="line number2 index1 alt1"><span>2</span></div>
+<div class="line number3 index2 alt2"><span>3</span></div>
+<div class="line number4 index3 alt1"><span>4</span></div>
+<div class="line number5 index4 alt2"><span>五</span></div>
+<div class="line number6 index5 alt1"><span>6</span></div>
+<div class="line number7 index6 alt2"><span>7</span></div>
+<div class="line number8 index7 alt1"><span>8</span></div>
+<div class="line number9 index8 alt2"><span>9</span></div>
+<div class="line number10 index9 alt1"><span>10</span></div>
+<div class="line number11 index10 alt2"><span>11</span></div>
+<div class="line number12 index11 alt1"><span>12</span></div>
+<div class="line number13 index12 alt2"><span>13</span></div>
+<div class="line number14 index13 alt1"><span>14</span></div>
+<div class="line number15 index14 alt2"><span>15</span></div>
+<div class="line number16 index15 alt1"><span>16</span></div>
+<div class="line number17 index16 alt2"><span>17</span></div>
+<div class="line number18 index17 alt1"><span>18</span></div>
+<div class="line number19 index18 alt2"><span>19</span></div>
+<div class="line number20 index19 alt1"><span>20</span></div>
+<div class="line number21 index20 alt2"><span>21</span></div>
+<div class="line number22 index21 alt1"><span>22</span></div>
+<div class="line number23 index22 alt2"><span>23</span></div>
+<div class="line number24 index23 alt1"><span>24</span></div>
+<div class="line number25 index24 alt2"><span>25</span></div>
+<div class="line number26 index25 alt1"><span>26</span></div>
+<div class="line number27 index26 alt2"><span>27</span></div>
+<div class="line number28 index27 alt1"><span>28</span></div>
+<div class="line number29 index28 alt2"><span>29</span></div>
+<div class="line number30 index29 alt1"><span>三十</span></div>
+<div class="line number31 index30 alt2"><span>31</span></div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py keyword">import</code> <code class="py plain">sys</code></div>
+<div class="line number2 index1 alt1"><code class="py keyword">from</code> <code class="py plain">PyQt5.QtCore </code><code class="py keyword">import</code> <code class="py plain">QCoreApplication</code></div>
+<div class="line number3 index2 alt2"><code class="py keyword">from</code> <code class="py plain">PyQt5.QtWidgets </code><code class="py keyword">import</code> <code class="py plain">QApplication, QWidget, QMainWindow, QPushButton</code></div>
+<div class="line number4 index3 alt1"> </div>
+<div class="line number5 index4 alt2"> </div>
+<div class="line number6 index5 alt1"><code class="py keyword">class</code> <code class="py plain">window(QMainWindow):</code></div>
+<div class="line number7 index6 alt2"> </div>
+<div class="line number8 index7 alt1"><code class="py spaces">    </code><code class="py keyword">def</code> <code class="py plain">__init__(</code><code class="py color1">self</code><code class="py plain">):</code></div>
+<div class="line number9 index8 alt2"><code class="py spaces">        </code><code class="py functions">super</code><code class="py plain">().__init__()</code></div>
+<div class="line number10 index9 alt1"><code class="py spaces">        </code><code class="py color1">self</code><code class="py plain">.setGeometry(</code><code class="py value">50</code><code class="py plain">, </code><code class="py value">50</code><code class="py plain">, </code><code class="py value">500</code><code class="py plain">, </code><code class="py value">300</code><code class="py plain">)</code></div>
+<div class="line number11 index10 alt2"><code class="py spaces">        </code><code class="py color1">self</code><code class="py plain">.setWindowTitle(</code><code class="py string">'第一個 PyQt5 程式'</code><code class="py plain">)</code></div>
+<div class="line number12 index11 alt1"><code class="py spaces">        </code><code class="py color1">self</code><code class="py plain">.addQuitButton()</code></div>
+<div class="line number13 index12 alt2"> </div>
+<div class="line number14 index13 alt1"><code class="py spaces">    </code><code class="py keyword">def</code> <code class="py plain">addQuitButton(</code><code class="py color1">self</code><code class="py plain">):</code></div>
+<div class="line number15 index14 alt2"><code class="py spaces">        </code><code class="py plain">btn </code><code class="py keyword">=</code> <code class="py plain">QPushButton(</code><code class="py string">'退出'</code><code class="py plain">, </code><code class="py color1">self</code><code class="py plain">)</code></div>
+<div class="line number16 index15 alt1"><code class="py spaces">        </code><code class="py plain">btn.clicked.connect(</code><code class="py color1">self</code><code class="py plain">.close_application)</code></div>
+<div class="line number17 index16 alt2"> </div>
+<div class="line number18 index17 alt1"><code class="py spaces">        </code><code class="py plain">btn.resize(btn.sizeHint())  </code><code class="py comments">#set to acceptable size automatic</code></div>
+<div class="line number19 index18 alt2"><code class="py spaces">        </code><code class="py plain">btn.move(</code><code class="py value">0</code><code class="py plain">, </code><code class="py value">0</code><code class="py plain">)</code></div>
+<div class="line number20 index19 alt1"><code class="py spaces">        </code><code class="py color1">self</code><code class="py plain">.show()</code></div>
+<div class="line number21 index20 alt2"> </div>
+<div class="line number22 index21 alt1"><code class="py spaces">    </code><code class="py keyword">def</code> <code class="py plain">close_application(</code><code class="py color1">self</code><code class="py plain">):</code></div>
+<div class="line number23 index22 alt2"><code class="py spaces">        </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">'關閉應用程式'</code><code class="py plain">)</code></div>
+<div class="line number24 index23 alt1"><code class="py spaces">        </code><code class="py plain">sys.exit()</code></div>
+<div class="line number25 index24 alt2"> </div>
+<div class="line number26 index25 alt1"><code class="py keyword">def</code> <code class="py plain">run():</code></div>
+<div class="line number27 index26 alt2"><code class="py spaces">    </code><code class="py plain">app </code><code class="py keyword">=</code> <code class="py plain">QApplication(sys.argv)</code></div>
+<div class="line number28 index27 alt1"><code class="py spaces">    </code><code class="py plain">Gui </code><code class="py keyword">=</code> <code class="py plain">window()</code></div>
+<div class="line number29 index28 alt2"><code class="py spaces">    </code><code class="py plain">sys.exit(app.</code><code class="py keyword">exec</code><code class="py plain">())</code></div>
+<div class="line number30 index29 alt1"> </div>
+<div class="line number31 index30 alt2"><code class="py plain">run()</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><a href="http://zetcode.com/gui/pyqt5/"><span>http://zetcode.com/gui/pyqt5/</span></a></p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_167807">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2"><span>1</span></div>
+<div class="line number2 index1 alt1"><span>2</span></div>
+<div class="line number3 index2 alt2"><span>3</span></div>
+<div class="line number4 index3 alt1"><span>4</span></div>
+<div class="line number5 index4 alt2"><span>五</span></div>
+<div class="line number6 index5 alt1"><span>6</span></div>
+<div class="line number7 index6 alt2"><span>7</span></div>
+<div class="line number8 index7 alt1"><span>8</span></div>
+<div class="line number9 index8 alt2"><span>9</span></div>
+<div class="line number10 index9 alt1"><span>10</span></div>
+<div class="line number11 index10 alt2"><span>11</span></div>
+<div class="line number12 index11 alt1"><span>12</span></div>
+<div class="line number13 index12 alt2"><span>13</span></div>
+<div class="line number14 index13 alt1"><span>14</span></div>
+<div class="line number15 index14 alt2"><span>15</span></div>
+<div class="line number16 index15 alt1"><span>16</span></div>
+<div class="line number17 index16 alt2"><span>17</span></div>
+<div class="line number18 index17 alt1"><span>18</span></div>
+<div class="line number19 index18 alt2"><span>19</span></div>
+<div class="line number20 index19 alt1"><span>20</span></div>
+<div class="line number21 index20 alt2"><span>21</span></div>
+<div class="line number22 index21 alt1"><span>22</span></div>
+<div class="line number23 index22 alt2"><span>23</span></div>
+<div class="line number24 index23 alt1"><span>24</span></div>
+<div class="line number25 index24 alt2"><span>25</span></div>
+<div class="line number26 index25 alt1"><span>26</span></div>
+<div class="line number27 index26 alt2"><span>27</span></div>
+<div class="line number28 index27 alt1"><span>28</span></div>
+<div class="line number29 index28 alt2"><span>29</span></div>
+<div class="line number30 index29 alt1"><span>三十</span></div>
+<div class="line number31 index30 alt2"><span>31</span></div>
+<div class="line number32 index31 alt1"><span>32</span></div>
+<div class="line number33 index32 alt2"><span>33</span></div>
+<div class="line number34 index33 alt1"><span>34</span></div>
+<div class="line number35 index34 alt2"><span>35</span></div>
+<div class="line number36 index35 alt1"><span>36</span></div>
+<div class="line number37 index36 alt2"><span>37</span></div>
+<div class="line number38 index37 alt1"><span>38</span></div>
+<div class="line number39 index38 alt2"><span>39</span></div>
+<div class="line number40 index39 alt1"><span>40</span></div>
+<div class="line number41 index40 alt2"><span>41</span></div>
+<div class="line number42 index41 alt1"><span>42</span></div>
+<div class="line number43 index42 alt2"><span>43</span></div>
+<div class="line number44 index43 alt1"><span>44</span></div>
+<div class="line number45 index44 alt2"><span>45</span></div>
+<div class="line number46 index45 alt1"><span>46</span></div>
+<div class="line number47 index46 alt2"><span>47</span></div>
+<div class="line number48 index47 alt1"><span>48</span></div>
+<div class="line number49 index48 alt2"><span>49</span></div>
+<div class="line number50 index49 alt1"><span>50</span></div>
+<div class="line number51 index50 alt2"><span>51</span></div>
+<div class="line number52 index51 alt1"><span>52</span></div>
+<div class="line number53 index52 alt2"><span>53</span></div>
+<div class="line number54 index53 alt1"><span>54</span></div>
+<div class="line number55 index54 alt2"><span>55</span></div>
+<div class="line number56 index55 alt1"><span>56</span></div>
+<div class="line number57 index56 alt2"><span>57</span></div>
+<div class="line number58 index57 alt1"><span>58</span></div>
+<div class="line number59 index58 alt2"><span>59</span></div>
+<div class="line number60 index59 alt1"><span>60</span></div>
+<div class="line number61 index60 alt2"><span>61</span></div>
+<div class="line number62 index61 alt1"><span>62</span></div>
+<div class="line number63 index62 alt2"><span>63</span></div>
+<div class="line number64 index63 alt1"><span>64</span></div>
+<div class="line number65 index64 alt2"><span>65</span></div>
+<div class="line number66 index65 alt1"><span>66</span></div>
+<div class="line number67 index66 alt2"><span>67</span></div>
+<div class="line number68 index67 alt1"><span>68</span></div>
+<div class="line number69 index68 alt2"><span>69</span></div>
+<div class="line number70 index69 alt1"><span>70</span></div>
+<div class="line number71 index70 alt2"><span>71</span></div>
+<div class="line number72 index71 alt1"><span>72</span></div>
+<div class="line number73 index72 alt2"><span>73</span></div>
+<div class="line number74 index73 alt1"><span>74</span></div>
+<div class="line number75 index74 alt2"><span>75</span></div>
+<div class="line number76 index75 alt1"><span>76</span></div>
+<div class="line number77 index76 alt2"><span>77</span></div>
+<div class="line number78 index77 alt1"><span>78</span></div>
+<div class="line number79 index78 alt2"><span>79</span></div>
+<div class="line number80 index79 alt1"><span>80</span></div>
+<div class="line number81 index80 alt2"><span>81</span></div>
+<div class="line number82 index81 alt1"><span>82</span></div>
+<div class="line number83 index82 alt2"><span>83</span></div>
+<div class="line number84 index83 alt1"><span>84</span></div>
+<div class="line number85 index84 alt2"><span>85</span></div>
+<div class="line number86 index85 alt1"><span>86</span></div>
+<div class="line number87 index86 alt2"><span>87</span></div>
+<div class="line number88 index87 alt1"><span>88</span></div>
+<div class="line number89 index88 alt2"><span>89</span></div>
+<div class="line number90 index89 alt1"><span>90</span></div>
+<div class="line number91 index90 alt2"><span>91</span></div>
+<div class="line number92 index91 alt1"><span>92</span></div>
+<div class="line number93 index92 alt2"><span>93</span></div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py comments">#!/usr/bin/python3</code></div>
+<div class="line number2 index1 alt1"> </div>
+<div class="line number3 index2 alt2"><code class="py keyword">import</code> <code class="py plain">sys</code></div>
+<div class="line number4 index3 alt1"><code class="py keyword">from</code> <code class="py plain">PyQt5.QtCore </code><code class="py keyword">import</code> <code class="py plain">QDateTime, Qt</code></div>
+<div class="line number5 index4 alt2"><code class="py comments"># stage 1</code></div>
+<div class="line number6 index5 alt1"><code class="py comments">#from PyQt5.QtWidgets import QApplication, QWidget</code></div>
+<div class="line number7 index6 alt2"><code class="py comments"># stage 2</code></div>
+<div class="line number8 index7 alt1"><code class="py comments">#from PyQt5.QtWidgets import QMainWindow, QAction, qApp, QApplication</code></div>
+<div class="line number9 index8 alt2"><code class="py comments"># stage 3</code></div>
+<div class="line number10 index9 alt1"><code class="py keyword">from</code> <code class="py plain">PyQt5.QtWidgets </code><code class="py keyword">import</code> <code class="py plain">QMainWindow, QAction, qApp, QApplication, QMenu</code></div>
+<div class="line number11 index10 alt2"><code class="py keyword">from</code> <code class="py plain">PyQt5.QtGui </code><code class="py keyword">import</code> <code class="py plain">QIcon</code></div>
+<div class="line number12 index11 alt1"> </div>
+<div class="line number13 index12 alt2"><code class="py plain">now </code><code class="py keyword">=</code> <code class="py plain">QDateTime.currentDateTime()</code></div>
+<div class="line number14 index13 alt1"> </div>
+<div class="line number15 index14 alt2"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"Today:"</code><code class="py plain">, now.toString(Qt.ISODate))</code></div>
+<div class="line number16 index15 alt1"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"Adding 12 days: {0}"</code><code class="py plain">.</code><code class="py functions">format</code><code class="py plain">(now.addDays(</code><code class="py value">12</code><code class="py plain">).toString(Qt.ISODate)))</code></div>
+<div class="line number17 index16 alt2"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"Subtracting 22 days: {0}"</code><code class="py plain">.</code><code class="py functions">format</code><code class="py plain">(now.addDays(</code><code class="py keyword">-</code><code class="py value">22</code><code class="py plain">).toString(Qt.ISODate)))</code></div>
+<div class="line number18 index17 alt1"> </div>
+<div class="line number19 index18 alt2"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"Adding 50 seconds: {0}"</code><code class="py plain">.</code><code class="py functions">format</code><code class="py plain">(now.addSecs(</code><code class="py value">50</code><code class="py plain">).toString(Qt.ISODate)))</code></div>
+<div class="line number20 index19 alt1"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"Adding 3 months: {0}"</code><code class="py plain">.</code><code class="py functions">format</code><code class="py plain">(now.addMonths(</code><code class="py value">3</code><code class="py plain">).toString(Qt.ISODate)))</code></div>
+<div class="line number21 index20 alt2"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"Adding 12 years: {0}"</code><code class="py plain">.</code><code class="py functions">format</code><code class="py plain">(now.addYears(</code><code class="py value">12</code><code class="py plain">).toString(Qt.ISODate)))</code></div>
+<div class="line number22 index21 alt1"> </div>
+<div class="line number23 index22 alt2"><code class="py keyword">class</code> <code class="py plain">Example(QMainWindow):</code></div>
+<div class="line number24 index23 alt1"><code class="py spaces">    </code> </div>
+<div class="line number25 index24 alt2"><code class="py spaces">    </code><code class="py keyword">def</code> <code class="py plain">__init__(</code><code class="py color1">self</code><code class="py plain">):</code></div>
+<div class="line number26 index25 alt1"><code class="py spaces">        </code><code class="py functions">super</code><code class="py plain">().__init__()</code></div>
+<div class="line number27 index26 alt2"><code class="py spaces">        </code><code class="py color1">self</code><code class="py plain">.initUI()</code></div>
+<div class="line number28 index27 alt1"><code class="py spaces">        </code> </div>
+<div class="line number29 index28 alt2"><code class="py spaces">        </code> </div>
+<div class="line number30 index29 alt1"><code class="py spaces">    </code><code class="py keyword">def</code> <code class="py plain">initUI(</code><code class="py color1">self</code><code class="py plain">):               </code></div>
+<div class="line number31 index30 alt2"><code class="py spaces">        </code><code class="py comments">'''</code></div>
+<div class="line number32 index31 alt1"><code class="py spaces">        </code><code class="py comments"># stage 1</code></div>
+<div class="line number33 index32 alt2"><code class="py spaces">        </code><code class="py comments">self.statusBar().showMessage('Ready')</code></div>
+<div class="line number34 index33 alt1"><code class="py spaces">        </code> </div>
+<div class="line number35 index34 alt2"><code class="py spaces">        </code><code class="py comments">self.setGeometry(300, 300, 250, 150)</code></div>
+<div class="line number36 index35 alt1"><code class="py spaces">        </code><code class="py comments">self.setWindowTitle('Statusbar')    </code></div>
+<div class="line number37 index36 alt2"><code class="py spaces">        </code><code class="py comments">self.show()</code></div>
+<div class="line number38 index37 alt1"><code class="py spaces">        </code><code class="py comments">'''</code></div>
+<div class="line number39 index38 alt2"><code class="py spaces">        </code> </div>
+<div class="line number40 index39 alt1"><code class="py spaces">        </code><code class="py comments">'''</code></div>
+<div class="line number41 index40 alt2"><code class="py spaces">        </code><code class="py comments"># stage 2</code></div>
+<div class="line number42 index41 alt1"><code class="py spaces">        </code><code class="py comments">exitAct = QAction(QIcon('exit.png'), '&amp;Exit', self)        </code></div>
+<div class="line number43 index42 alt2"><code class="py spaces">        </code><code class="py comments">exitAct.setShortcut('Ctrl+Q')</code></div>
+<div class="line number44 index43 alt1"><code class="py spaces">        </code><code class="py comments">exitAct.setStatusTip('Exit application')</code></div>
+<div class="line number45 index44 alt2"><code class="py spaces">        </code><code class="py comments">exitAct.triggered.connect(qApp.quit)</code></div>
+<div class="line number46 index45 alt1"> </div>
+<div class="line number47 index46 alt2"><code class="py spaces">        </code><code class="py comments">self.statusBar()</code></div>
+<div class="line number48 index47 alt1"> </div>
+<div class="line number49 index48 alt2"><code class="py spaces">        </code><code class="py comments">menubar = self.menuBar()</code></div>
+<div class="line number50 index49 alt1"><code class="py spaces">        </code><code class="py comments">fileMenu = menubar.addMenu('&amp;File')</code></div>
+<div class="line number51 index50 alt2"><code class="py spaces">        </code><code class="py comments">fileMenu.addAction(exitAct)</code></div>
+<div class="line number52 index51 alt1"><code class="py spaces">        </code> </div>
+<div class="line number53 index52 alt2"><code class="py spaces">        </code><code class="py comments">self.setGeometry(300, 300, 300, 200)</code></div>
+<div class="line number54 index53 alt1"><code class="py spaces">        </code><code class="py comments">self.setWindowTitle('Simple menu')    </code></div>
+<div class="line number55 index54 alt2"><code class="py spaces">        </code><code class="py comments">self.show()</code></div>
+<div class="line number56 index55 alt1"><code class="py spaces">        </code><code class="py comments">'''</code></div>
+<div class="line number57 index56 alt2"><code class="py spaces">        </code> </div>
+<div class="line number58 index57 alt1"><code class="py spaces">        </code><code class="py plain">menubar </code><code class="py keyword">=</code> <code class="py color1">self</code><code class="py plain">.menuBar()</code></div>
+<div class="line number59 index58 alt2"><code class="py spaces">        </code><code class="py plain">fileMenu </code><code class="py keyword">=</code> <code class="py plain">menubar.addMenu(</code><code class="py string">'File'</code><code class="py plain">)</code></div>
+<div class="line number60 index59 alt1"><code class="py spaces">        </code> </div>
+<div class="line number61 index60 alt2"><code class="py spaces">        </code><code class="py plain">impMenu </code><code class="py keyword">=</code> <code class="py plain">QMenu(</code><code class="py string">'Import'</code><code class="py plain">, </code><code class="py color1">self</code><code class="py plain">)</code></div>
+<div class="line number62 index61 alt1"><code class="py spaces">        </code><code class="py plain">impAct </code><code class="py keyword">=</code> <code class="py plain">QAction(</code><code class="py string">'Import mail'</code><code class="py plain">, </code><code class="py color1">self</code><code class="py plain">) </code></div>
+<div class="line number63 index62 alt2"><code class="py spaces">        </code><code class="py plain">impMenu.addAction(impAct)</code></div>
+<div class="line number64 index63 alt1"><code class="py spaces">        </code> </div>
+<div class="line number65 index64 alt2"><code class="py spaces">        </code><code class="py comments"># 加入 QAction</code></div>
+<div class="line number66 index65 alt1"><code class="py spaces">        </code><code class="py plain">newAct </code><code class="py keyword">=</code> <code class="py plain">QAction(</code><code class="py string">'New'</code><code class="py plain">, </code><code class="py color1">self</code><code class="py plain">)        </code></div>
+<div class="line number67 index66 alt2"><code class="py spaces">        </code><code class="py plain">fileMenu.addAction(newAct)</code></div>
+<div class="line number68 index67 alt1"><code class="py spaces">        </code> </div>
+<div class="line number69 index68 alt2"><code class="py spaces">        </code><code class="py plain">newAct1 </code><code class="py keyword">=</code> <code class="py plain">QAction(</code><code class="py string">'New1'</code><code class="py plain">, </code><code class="py color1">self</code><code class="py plain">)        </code></div>
+<div class="line number70 index69 alt1"><code class="py spaces">        </code><code class="py plain">fileMenu.addAction(newAct1)</code></div>
+<div class="line number71 index70 alt2"><code class="py spaces">        </code> </div>
+<div class="line number72 index71 alt1"><code class="py spaces">        </code><code class="py comments"># 加入 QMenu</code></div>
+<div class="line number73 index72 alt2"><code class="py spaces">        </code><code class="py plain">fileMenu.addMenu(impMenu)</code></div>
+<div class="line number74 index73 alt1"><code class="py spaces">        </code> </div>
+<div class="line number75 index74 alt2"><code class="py spaces">        </code><code class="py color1">self</code><code class="py plain">.setGeometry(</code><code class="py value">300</code><code class="py plain">, </code><code class="py value">300</code><code class="py plain">, </code><code class="py value">300</code><code class="py plain">, </code><code class="py value">200</code><code class="py plain">)</code></div>
+<div class="line number76 index75 alt1"><code class="py spaces">        </code><code class="py color1">self</code><code class="py plain">.setWindowTitle(</code><code class="py string">'Submenu'</code><code class="py plain">)    </code></div>
+<div class="line number77 index76 alt2"><code class="py spaces">        </code><code class="py color1">self</code><code class="py plain">.show()</code></div>
+<div class="line number78 index77 alt1"> </div>
+<div class="line number79 index78 alt2"> </div>
+<div class="line number80 index79 alt1"><code class="py keyword">if</code> <code class="py plain">__name__ </code><code class="py keyword">=</code><code class="py keyword">=</code> <code class="py string">'__main__'</code><code class="py plain">:</code></div>
+<div class="line number81 index80 alt2"><code class="py spaces">    </code><code class="py comments">'''</code></div>
+<div class="line number82 index81 alt1"><code class="py spaces">    </code><code class="py comments">app = QApplication(sys.argv)</code></div>
+<div class="line number83 index82 alt2"> </div>
+<div class="line number84 index83 alt1"><code class="py spaces">    </code><code class="py comments">w = QWidget()</code></div>
+<div class="line number85 index84 alt2"><code class="py spaces">    </code><code class="py comments">w.resize(250, 150)</code></div>
+<div class="line number86 index85 alt1"><code class="py spaces">    </code><code class="py comments">w.move(300, 300)</code></div>
+<div class="line number87 index86 alt2"><code class="py spaces">    </code><code class="py comments">w.setWindowTitle('Simple')</code></div>
+<div class="line number88 index87 alt1"><code class="py spaces">    </code><code class="py comments">w.show()</code></div>
+<div class="line number89 index88 alt2"><code class="py spaces">    </code><code class="py comments">'''</code></div>
+<div class="line number90 index89 alt1"><code class="py spaces">    </code><code class="py plain">app </code><code class="py keyword">=</code> <code class="py plain">QApplication(sys.argv)</code></div>
+<div class="line number91 index90 alt2"><code class="py spaces">    </code><code class="py plain">ex </code><code class="py keyword">=</code> <code class="py plain">Example()</code></div>
+<div class="line number92 index91 alt1"><code class="py spaces">    </code> </div>
+<div class="line number93 index92 alt2"><code class="py spaces">    </code><code class="py plain">sys.exit(app.</code><code class="py keyword">exec</code><code class="py plain">())&lt;br&gt;&lt;br&gt;&lt;br&gt;</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><span>有關if __name__ =='__ main__'：</span></p>
+<p><a href="https://stackoverflow.com/questions/419163/what-does-if-name-main-do"><span>https://stackoverflow.com/questions/419163/what-does-if-name-main-do</span></a></p>
+<p><span>當Python解譯器讀取原始碼時，會執行其中的所有程式碼。而在執行這些程式碼之前，會定義一些特殊變數的值，例如：當該程式碼執行時，是以主程式的位階直接執行時，Python就會將__name__這個變數設為__main__。</span></p>
+<p><span>假如這個程式碼檔案並非以主程式的位階直接執行，而是被導入其他程式中，以模組的位階執行，__name__變數就會被設為該模組的名稱。</span></p>
+<p></p>
+<p></p>
+<h1>Python 語法</h1>
 <p>Python 3 官方教材: <a href="https://docs.python.org/3/index.html">https://docs.python.org/3/index.html</a> </p>
 <p>Python tutorial: <a href="https://docs.python.org/3/tutorial/index.html">https://docs.python.org/3/tutorial/index.html</a> (英文)</p>
 <p>Python 教學: <a href="https://python-doc-tw.github.io/tutorial/index.html">https://python-doc-tw.github.io/tutorial/index.html</a> </p>
@@ -1136,58 +1597,7 @@ ctx.fill()
 <p><a href="https://link.springer.com/book/10.1007/978-3-642-23816-1">https://link.springer.com/book/10.1007/978-3-642-23816-1</a> </p>
 <h4>Math into LATEX</h4>
 <p><a href="https://link.springer.com/book/10.1007/978-1-4612-2134-0">https://link.springer.com/book/10.1007/978-1-4612-2134-0</a> </p>
-brython_div = doc["brython_div"]
-brython_div <= canvas
-
-# 準備繪圖畫布
-canvas = doc["taiwan_flag"]
-ctx = canvas.getContext("2d")
-# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
-# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
-# 以下採用 canvas 原始座標繪圖
-flag_w = canvas.width
-flag_h = canvas.height
-circle_x = flag_w/4
-circle_y = flag_h/4
-# 先畫滿地紅
-ctx.fillStyle='rgb(255, 0, 0)'
-ctx.fillRect(0,0,flag_w,flag_h)
-# 再畫青天
-ctx.fillStyle='rgb(0, 0, 150)'
-ctx.fillRect(0,0,flag_w/2,flag_h/2)
-# 畫十二道光芒白日
-ctx.beginPath()
-star_radius = flag_w/8
-angle = 0
-for i in range(24):
-    angle += 5*math.pi*2/12
-    toX = circle_x + math.cos(angle)*star_radius
-    toY = circle_y + math.sin(angle)*star_radius
-    # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
-    if (i):
-        ctx.lineTo(toX, toY)
-    else:
-        ctx.moveTo(toX, toY)
-ctx.closePath()
-# 將填色設為白色
-ctx.fillStyle = '#fff'
-ctx.fill()
-# 白日:藍圈
-ctx.beginPath()
-ctx.arc(circle_x, circle_y, flag_w*17/240, 0, math.pi*2, True)
-ctx.closePath()
-# 填色設為藍色
-ctx.fillStyle = 'rgb(0, 0, 149)'
-ctx.fill()
-# 白日:白心
-ctx.beginPath()
-ctx.arc(circle_x, circle_y, flag_w/16, 0, math.pi*2, True)
-ctx.closePath()
-# 填色設為白色
-ctx.fillStyle = '#fff'
-ctx.fill()
-</script>
-</p>
+<p>brython_div = doc["brython_div"] brython_div &lt;= canvas # 準備繪圖畫布 canvas = doc["taiwan_flag"] ctx = canvas.getContext("2d") # 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點 # ctx.setTransform(1, 0, 0, -1, 0, canvas.height) # 以下採用 canvas 原始座標繪圖 flag_w = canvas.width flag_h = canvas.height circle_x = flag_w/4 circle_y = flag_h/4 # 先畫滿地紅 ctx.fillStyle='rgb(255, 0, 0)' ctx.fillRect(0,0,flag_w,flag_h) # 再畫青天 ctx.fillStyle='rgb(0, 0, 150)' ctx.fillRect(0,0,flag_w/2,flag_h/2) # 畫十二道光芒白日 ctx.beginPath() star_radius = flag_w/8 angle = 0 for i in range(24): angle += 5*math.pi*2/12 toX = circle_x + math.cos(angle)*star_radius toY = circle_y + math.sin(angle)*star_radius # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo if (i): ctx.lineTo(toX, toY) else: ctx.moveTo(toX, toY) ctx.closePath() # 將填色設為白色 ctx.fillStyle = '#fff' ctx.fill() # 白日:藍圈 ctx.beginPath() ctx.arc(circle_x, circle_y, flag_w*17/240, 0, math.pi*2, True) ctx.closePath() # 填色設為藍色 ctx.fillStyle = 'rgb(0, 0, 149)' ctx.fill() # 白日:白心 ctx.beginPath() ctx.arc(circle_x, circle_y, flag_w/16, 0, math.pi*2, True) ctx.closePath() # 填色設為白色 ctx.fillStyle = '#fff' ctx.fill()</p>
 <h1>參考資料</h1>
 <h4>Python 教材</h4>
 <p><a href="https://www.python-course.eu">https://www.python-course.eu</a> </p>
@@ -1196,3 +1606,28 @@ ctx.fill()
 <h4>Python 網際框架</h4>
 <p><a href="http://flask.pocoo.org/">http://flask.pocoo.org/</a></p>
 <p><a href="https://www.djangoproject.com/">https://www.djangoproject.com/</a> </p>
+<h1>電子書</h1>
+<h4>Learn to Program with Python 3 - A Step-by-Step Guide to Programming</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-1-4842-3879-0">https://link.springer.com/book/10.1007/978-1-4842-3879-0</a> </p>
+<h4>Beginning Python - From Novice to Professional</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-1-4842-0028-5">https://link.springer.com/book/10.1007/978-1-4842-0028-5</a> </p>
+<h4>Programming with Python</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-981-10-3277-6">https://link.springer.com/book/10.1007/978-981-10-3277-6</a> </p>
+<h4>Python Recipes Handbook - A Problem-Solution Approach</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-1-4842-0241-8">https://link.springer.com/book/10.1007/978-1-4842-0241-8</a> </p>
+<h4>Beginning Django Web Application Development and Deployment with Python</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-1-4842-2787-9">https://link.springer.com/book/10.1007/978-1-4842-2787-9</a> </p>
+<h4>Python 2 and 3 Compatibility - With Six and Python-Future Libraries</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-1-4842-2955-2">https://link.springer.com/book/10.1007/978-1-4842-2955-2</a> </p>
+<h4>Elementary Mechanics Using Python - A Modern Course Combining Analytical and Numerical Techniques</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-3-319-19596-4">https://link.springer.com/book/10.1007/978-3-319-19596-4</a> (Python2)</p>
+<h4>Programming for Computations - Python A Gentle Introduction to Numerical Simulations with Python</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-3-319-32428-9">https://link.springer.com/book/10.1007/978-3-319-32428-9</a> (Python2)</p>
+<h4>LaTeX in 24 Hours - A Practical Guide for Scientific Writing</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-3-319-47831-9">https://link.springer.com/book/10.1007/978-3-319-47831-9</a> </p>
+<h4>Practical LaTeX</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-3-319-06425-3">https://link.springer.com/book/10.1007/978-3-319-06425-3</a> </p>
+<h4>LaTeX and Friends</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-3-642-23816-1">https://link.springer.com/book/10.1007/978-3-642-23816-1</a> </p>
+<h4>Math into LATEX</h4>
+<p><a href="https://link.springer.com/book/10.1007/978-1-4612-2134-0">https://link.springer.com/book/10.1007/978-1-4612-2134-0</a> </p>
